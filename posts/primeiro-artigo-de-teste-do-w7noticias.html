@@ -1,0 +1,431 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Este é o primeiro artigo de teste do w7noticias. Segundo título Conteúdo utilizado apenas para validar o sistema."><meta name="robots" content="index, follow"><link rel="canonical" href="https://w7noticias.com/posts/primeiro-artigo-de-teste-do-w7noticias.html"><link rel="icon" type="image/png" href="https://w7noticias.com/favicon.png"><title>Primeiro artigo de teste do w7noticias | W7Notícias</title><meta property="og:type" content="article"><meta property="og:site_name" content="W7Notícias"><meta property="og:title" content="Primeiro artigo de teste do w7noticias"><meta property="og:description" content="Este é o primeiro artigo de teste do w7noticias. Segundo título Conteúdo utilizado apenas para validar o sistema."><meta property="og:url" content="https://w7noticias.com/posts/primeiro-artigo-de-teste-do-w7noticias.html"><meta property="og:image" content="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Primeiro artigo de teste do w7noticias"><meta name="twitter:description" content="Este é o primeiro artigo de teste do w7noticias. Segundo título Conteúdo utilizado apenas para validar o sistema."><meta name="twitter:image" content="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG"><style>
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa;
+  color: #202124;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header-inner {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.logo-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #111827;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.logo-text {
+  font-size: 20px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-nav a:hover {
+  color: #111827;
+}
+
+
+/* ============================================================
+   ANÚNCIOS
+   ============================================================ */
+
+.ad-top-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.ad-final-container {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.ad-slot {
+  width: 100%;
+  margin: 15px auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.ad-inline-container {
+  margin: 30px 0;
+}
+
+
+/* ============================================================
+   VÍDEO YOUTUBE
+   ============================================================ */
+
+.article-video {
+  width: 100%;
+  margin: 40px 0 10px 0;
+  padding-top: 10px;
+}
+
+.article-video::before {
+  content: "Vídeo";
+  display: block;
+  margin-bottom: 12px;
+  color: #111827;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.youtube-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #000000;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.youtube-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+/* ============================================================
+   LAYOUT ARTIGO
+   ============================================================ */
+
+.article-layout {
+  display: grid;
+  grid-template-columns: 180px minmax(0,760px) 180px;
+  justify-content: center;
+  gap: 20px;
+  align-items: start;
+  padding-top: 25px;
+  padding-bottom: 45px;
+}
+
+.article-sidebar {
+  min-width: 0;
+}
+
+.article-sidebar .ad-slot {
+  position: sticky;
+  top: 20px;
+}
+
+
+/* ============================================================
+   ARTIGO
+   ============================================================ */
+
+.article {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+}
+
+.article-category {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: #eef2ff;
+  color: #3730a3;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.article-title {
+  margin: 0;
+  color: #111827;
+  font-size: 42px;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+}
+
+.article-meta {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+
+/* ============================================================
+   IMAGEM
+   ============================================================ */
+
+.article-image {
+  margin: 0 0 35px 0;
+}
+
+.article-image img {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+
+/* ============================================================
+   CONTEÚDO
+   ============================================================ */
+
+.article-content {
+  color: #30343b;
+  font-size: 18px;
+}
+
+.article-content p {
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.article-content h2 {
+  margin-top: 38px;
+  margin-bottom: 15px;
+  color: #111827;
+  font-size: 28px;
+  line-height: 1.3;
+}
+
+.article-content h3 {
+  margin-top: 30px;
+  margin-bottom: 12px;
+  color: #111827;
+  font-size: 23px;
+}
+
+.article-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 25px auto;
+  border-radius: 10px;
+}
+
+.article-content a {
+  color: #2563eb;
+}
+
+.article-content blockquote {
+  margin: 25px 0;
+  padding: 18px 22px;
+  border-left: 4px solid #2563eb;
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+.article-content ul,
+.article-content ol {
+  margin-bottom: 25px;
+  padding-left: 30px;
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.site-footer {
+  padding: 30px 0;
+  background: #111827;
+  color: #d1d5db;
+  text-align: center;
+  font-size: 13px;
+}
+
+
+/* ============================================================
+   TABLET
+   ============================================================ */
+
+@media (max-width: 1050px) {
+
+  .article-layout {
+    grid-template-columns: 150px minmax(0,1fr) 150px;
+  }
+
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 800px) {
+
+  .header-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .main-nav {
+    gap: 12px;
+  }
+
+  .article-layout {
+    display: block;
+    padding-top: 20px;
+  }
+
+  .article-sidebar {
+    display: none;
+  }
+
+  .article {
+    padding: 24px 20px;
+    border-radius: 10px;
+  }
+
+  .article-title {
+    font-size: 31px;
+  }
+
+  .article-content {
+    font-size: 17px;
+  }
+
+  .article-image img {
+    max-height: 380px;
+  }
+
+  .youtube-wrapper {
+    border-radius: 10px;
+  }
+
+}
+
+</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"Primeiro artigo de teste do w7noticias","description":"Este é o primeiro artigo de teste do w7noticias. Segundo título Conteúdo utilizado apenas para validar o sistema.","datePublished":"","dateModified":"","mainEntityOfPage":{"@type":"WebPage","@id":"https://w7noticias.com/posts/primeiro-artigo-de-teste-do-w7noticias.html"},"publisher":{"@type":"Organization","name":"W7Notícias","url":"https://w7noticias.com"},"image":["https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG"]}</script></head><body><header class="site-header"><div class="container header-inner"><a href="/" class="logo" aria-label="W7Notícias - Página inicial"><span class="logo-mark">W7</span><span class="logo-text">w7noticias</span></a><nav class="main-nav" aria-label="Navegação principal"><a href="/">Início</a><a href="/categoria/famosos.html">Famosos</a><a href="/categoria/curiosidades.html">Curiosidades</a><a href="/categoria/saude.html">Saúde</a><a href="/categoria/brasil.html">Brasil</a><a href="/categoria/mundo.html">Mundo</a><a href="/contato.html">Contato</a></nav></div></header><div class="container ad-top-container"><div class="ad-slot" data-ad-id="ANUNCIO_1787335167827" data-ad-position="TOPO" data-ad-order="1"><div class="test-ad-container">
+
+  <span class="test-ad-label">
+    ANÚNCIO DE TESTE
+  </span>
+
+  <a href="#">
+
+    <img
+      src="https://picsum.photos/728/250"
+      alt="Imagem de teste"
+    >
+
+    <p>
+      Lorem ipsum dolor sit amet
+    </p>
+
+    <p>
+      Consectetur adipiscing elit.
+    </p>
+
+  </a>
+
+</div></div></div><main class="container article-layout"><aside class="article-sidebar article-sidebar-left"><div class="ad-slot" data-ad-id="ANUNCIO_1787566619189" data-ad-position="ESQUERDA" data-ad-order="1"><div class="anuncio-teste-google" style="width: 300px; height: 250px; border: 1px solid #dadce0; background-color: #f8f9fa; display: flex; flex-direction: column; justify-content: space-between; padding: 8px; font-family: Arial, sans-serif; box-sizing: border-box;">
+  <span style="font-size: 10px; color: #70757a; text-transform: uppercase; letter-spacing: 0.5px;">Anúncio</span>
+  <div style="text-align: center;">
+    <p style="font-size: 14px; color: #1a0dab; margin: 0 0 4px 0; font-weight: bold;">Título do Anúncio de Teste</p>
+    <p style="font-size: 12px; color: #4d5156; margin: 0;">Este é um texto de exemplo para simular um banner publicitário na sua página web.</p>
+  </div>
+  <span style="font-size: 11px; color: #006621; text-align: right;">://siteexemplo.com.br</span>
+</div></div></aside><article class="article"><div class="article-category">Brasil</div><h1 class="article-title">Primeiro artigo de teste do w7noticias</h1><div class="article-meta">21/08/2026 15:25</div><figure class="article-image"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="Primeiro artigo de teste do w7noticias" loading="eager" decoding="async"></figure><div class="article-content"><p>Este é o primeiro artigo de teste do w7noticias.</p><h2>Segundo título</h2><p>Conteúdo utilizado apenas para validar o sistema.</p><div class="ad-inline-container"><div class="ad-slot" data-ad-id="ANUNCIO_1787487511668" data-ad-position="ENTRE_PARAGRAFOS" data-ad-order="1"><!-- Início do Banner de Anúncio com Imagem -->
+<div class="adsense-image-test" style="margin: 20px auto; text-align: center; max-width: 300px; font-family: Arial, sans-serif; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border: 1px solid #ddd; background: #fff;">
+    
+    <!-- Tag de identificação pequena (Padrão do Google) -->
+    <div style="font-size: 10px; color: #999; text-align: right; padding: 4px 8px; background: #f9f9f9; border-bottom: 1px solid #eee;">
+        Anúncios Google
+    </div>
+    
+    <!-- Link e Imagem do Anúncio -->
+    <a href="https://google.com" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: block;">
+        <img src="https://picsum.photos" alt="Anúncio de Teste" style="display: block; width: 100%; height: 250px; object-fit: cover;" />
+    </box>
+    
+</div>
+<!-- Fim do Banner de Anúncio com Imagem --></div></div></div></article><aside class="article-sidebar article-sidebar-right"><div class="ad-slot" data-ad-id="ANUNCIO_1787566653670" data-ad-position="DIREITA" data-ad-order="1"><div class="anuncio-teste-google" style="width: 300px; height: 250px; border: 1px solid #dadce0; background-color: #f8f9fa; display: flex; flex-direction: column; justify-content: space-between; padding: 8px; font-family: Arial, sans-serif; box-sizing: border-box;">
+  <span style="font-size: 10px; color: #70757a; text-transform: uppercase; letter-spacing: 0.5px;">Anúncio</span>
+  <div style="text-align: center;">
+    <p style="font-size: 14px; color: #1a0dab; margin: 0 0 4px 0; font-weight: bold;">Título do Anúncio de Teste</p>
+    <p style="font-size: 12px; color: #4d5156; margin: 0;">Este é um texto de exemplo para simular um banner publicitário na sua página web.</p>
+  </div>
+  <span style="font-size: 11px; color: #006621; text-align: right;">://siteexemplo.com.br</span>
+</div></div></aside></main><div class="container ad-final-container"><div class="ad-slot" data-ad-id="ANUNCIO_1787566697054" data-ad-position="FINAL" data-ad-order="1"><!-- Início do Bloco de Anúncio de Teste -->
+<div class="adsense-test-container" style="margin: 20px auto; text-align: center; max-width: 100%;">
+    <ins class="adsbygoogle"
+         style="display:block; background:#f4f4f4; border:2px dashed #bbb; border-radius:4px; padding:20px; text-align:center; min-height:90px;"
+         data-ad-client="ca-pub-0000000000000000"
+         data-ad-slot="0000000000"
+         data-ad-format="auto"
+         data-full-width-responsive="true">
+         <span style="font-family: sans-serif; font-size: 14px; color: #666; font-weight: bold; display: block; margin-bottom: 5px;">ANÚNCIO GOOGLE (TESTE)</span>
+         <span style="font-family: sans-serif; font-size: 12px; color: #999; display: block;">Espaço reservado para o banner publicitário responsivo.</span>
+    </ins>
+</div>
+<!-- Fim do Bloco de Anúncio de Teste --></div></div><footer class="site-footer"><div class="container footer-inner"><p>&copy; 2026 W7Notícias. Todos os direitos reservados.</p></div></footer></body></html>
