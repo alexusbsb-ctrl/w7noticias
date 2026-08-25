@@ -1,1116 +1,1241 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="W7Notícias — notícias, informação, curiosidades, Brasil, mundo, saúde e muito mais."><meta name="robots" content="index, follow"><link rel="canonical" href="https://w7noticias.com"><link rel="icon" type="image/png" href="https://w7noticias.com/favicon.png"><title>W7Notícias — Notícias e Informação</title><meta property="og:type" content="website"><meta property="og:site_name" content="W7Notícias"><meta property="og:title" content="W7Notícias — Notícias e Informação"><meta property="og:description" content="Notícias, informação, curiosidades, Brasil, mundo e muito mais."><meta property="og:url" content="https://w7noticias.com"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="W7Notícias"><meta name="twitter:description" content="Notícias e informação."><style><style>
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="W7Notícias — notícias, informação, curiosidades, Brasil, mundo, saúde e muito mais."><meta name="robots" content="index, follow"><link rel="canonical" href="https://w7noticias.com"><link rel="icon" type="image/png" href="https://w7noticias.com/favicon.png"><title>W7Notícias — Notícias e Informação</title><meta property="og:type" content="website"><meta property="og:site_name" content="W7Notícias"><meta property="og:title" content="W7Notícias — Notícias e Informação"><meta property="og:description" content="Notícias, informação, curiosidades, Brasil, mundo e muito mais."><meta property="og:url" content="https://w7noticias.com"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="W7Notícias"><meta name="twitter:description" content="Notícias e informação."><style>/* ============================================================
+W7NOTICIAS
+STYLE.HTML
+CSS PÚBLICO
+============================================================ */
 
- 
-
-
- 
+/* ============================================================
+RESET
+============================================================ */
 
 * {
   box-sizing: border-box;
-}
+  }
 
 html {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
+margin: 0;
+padding: 0;
+scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background: #f5f7fa;
-  color: #202124;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
+margin: 0;
+padding: 0;
+background: #f5f7fa;
+color: #202124;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.6;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+max-width: 100%;
+height: auto;
 }
 
 a {
-  color: inherit;
+color: inherit;
 }
 
-
- 
+/* ============================================================
+CONTAINER
+============================================================ */
 
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+padding-left: 20px;
+padding-right: 20px;
 }
 
-
- 
+/* ============================================================
+HEADER
+============================================================ */
 
 .site-header {
-  width: 100%;
-  background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
+width: 100%;
+background: #ffffff;
+border-bottom: 1px solid #e5e7eb;
 
-  position: relative;
-  z-index: 100;
+position: relative;
+z-index: 100;
 }
 
 .header-inner {
-  min-height: 72px;
+min-height: 72px;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+display: flex;
+align-items: center;
+justify-content: space-between;
 
-  gap: 25px;
+gap: 25px;
 }
 
-
- 
+/* ============================================================
+LOGO
+============================================================ */
 
 .logo {
-  display: inline-flex;
-  align-items: center;
+display: inline-flex;
+align-items: center;
 
-  gap: 10px;
+gap: 10px;
 
-  text-decoration: none;
+text-decoration: none;
 
-  color: #2563eb;
+color: #2563eb;
 
-  font-weight: 700;
+font-weight: 700;
 
-  flex-shrink: 0;
+flex-shrink: 0;
 }
 
 .logo-mark {
-  width: 42px;
-  height: 42px;
+width: 42px;
+height: 42px;
 
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+display: inline-flex;
+align-items: center;
+justify-content: center;
 
-  border-radius: 10px;
+border-radius: 10px;
 
-  background: #2563eb;
-  color: #ffffff;
+background: #2563eb;
+color: #ffffff;
 
-  font-size: 15px;
-  font-weight: 800;
+font-size: 15px;
+font-weight: 800;
 }
 
 .logo-text {
-  color: #2563eb;
+color: #2563eb;
 
-  font-size: 20px;
-  font-weight: 800;
+font-size: 20px;
+font-weight: 800;
 }
 
-
- 
+/* ============================================================
+MENU
+============================================================ */
 
 .main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+display: flex;
+align-items: center;
+justify-content: flex-end;
 
-  gap: 18px;
+gap: 18px;
 
-  flex-wrap: wrap;
+flex-wrap: wrap;
 }
 
 .main-nav a {
-  color: #4b5563;
+color: #4b5563;
 
-  text-decoration: none;
+text-decoration: none;
 
-  font-size: 14px;
-  font-weight: 600;
+font-size: 14px;
+font-weight: 600;
 
-  transition: color 0.2s ease;
+transition: color 0.2s ease;
 }
 
 .main-nav a:hover {
-  color: #2563eb;
+color: #2563eb;
 }
 
 .search-link {
-  color: #2563eb !important;
+color: #2563eb !important;
 }
 
-
- 
+/* ============================================================
+ANÚNCIO TOPO
+============================================================ */
 
 .ad-top-container {
-  width: 100%;
-  max-width: 1200px;
+width: 100%;
+max-width: 1200px;
 
-  margin: 0 auto;
+margin: 0 auto;
 
-  padding: 15px 20px 20px;
+padding: 15px 20px 20px;
 }
 
 .ad-top-container .ad-slot {
-  width: 100%;
+width: 100%;
 
-  margin: 0 auto 20px;
+margin: 0 auto 20px;
 
-  text-align: center;
+text-align: center;
 }
 
-
- 
+/* ============================================================
+ANÚNCIO FINAL
+============================================================ */
 
 .ad-final-container {
-  width: 100%;
-  max-width: 1200px;
+width: 100%;
+max-width: 1200px;
 
-  margin: 0 auto;
+margin: 0 auto;
 
-  padding: 20px 20px 35px;
+padding: 20px 20px 35px;
 }
 
 .ad-final-container .ad-slot {
-  width: 100%;
+width: 100%;
 
-  margin: 0 auto 20px;
+margin: 0 auto 20px;
 
-  text-align: center;
+text-align: center;
 }
 
-
- 
+/* ============================================================
+ANÚNCIO GENÉRICO
+============================================================ */
 
 .ad-slot {
-  display: block;
+display: block;
 
-  width: 100%;
+width: 100%;
 
-  margin: 0 auto 25px;
+margin: 0 auto 25px;
 
-  text-align: center;
+text-align: center;
 
-  overflow: visible;
+overflow: visible;
 }
 
 .ad-slot iframe {
-  max-width: 100%;
+max-width: 100%;
 }
 
-
- 
+/* ============================================================
+ANÚNCIOS ENTRE PARÁGRAFOS
+============================================================ */
 
 .ad-inline-container {
-  width: 100%;
+width: 100%;
 
-  margin: 30px 0;
+margin: 30px 0;
 
-  text-align: center;
+text-align: center;
 }
 
 .ad-inline-container .ad-slot {
-  width: 100%;
+width: 100%;
 
-  margin: 0 auto;
+margin: 0 auto;
 }
 
-
- 
+/* ============================================================
+HOME
+============================================================ */
 
 .home-container {
-  width: 100%;
-  max-width: 1200px;
+width: 100%;
+max-width: 1200px;
 
-  margin: 0 auto;
+margin: 0 auto;
 
-  padding: 20px 20px 50px;
+padding: 20px 20px 50px;
 }
 
 .home-heading {
-  margin: 0 0 30px;
+margin: 0 0 30px;
 }
 
 .home-heading h1 {
-  margin: 0;
+margin: 0;
 
-  color: #111827;
+color: #111827;
 
-  font-size: 36px;
-  line-height: 1.2;
+font-size: 36px;
+line-height: 1.2;
 }
 
 .home-heading p {
-  margin: 8px 0 0;
+margin: 8px 0 0;
 
-  color: #6b7280;
+color: #6b7280;
 }
 
-
- 
+/* ============================================================
+LISTA DE POSTS
+============================================================ */
 
 .posts-list {
-  width: 100%;
+width: 100%;
 
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
 
-  gap: 20px;
+gap: 20px;
 }
 
-
- 
+/* ============================================================
+CARD DO POST
+============================================================ */
 
 .post-card {
-  width: 100%;
+width: 100%;
 
-  display: flex;
-  align-items: stretch;
+display: flex;
+align-items: stretch;
 
-  background: #ffffff;
+background: #ffffff;
 
-  border: 1px solid #e5e7eb;
+border: 1px solid #e5e7eb;
 
-  border-radius: 12px;
+border-radius: 12px;
 
-  overflow: hidden;
+overflow: hidden;
 
-  box-shadow:
-    0 3px 14px rgba(0,0,0,0.04);
+box-shadow:
+0 3px 14px rgba(0,0,0,0.04);
 }
 
 .post-card-image {
-  display: block;
+display: block;
 
-  flex: 0 0 250px;
+flex: 0 0 250px;
 
-  width: 250px;
-  height: 165px;
+width: 250px;
+height: 165px;
 
-  overflow: hidden;
+overflow: hidden;
 }
 
 .post-card-image img {
-  display: block;
+display: block;
 
-  width: 100%;
-  height: 100%;
+width: 100%;
+height: 100%;
 
-  object-fit: cover;
+object-fit: cover;
 
-  transition:
-    transform 0.25s ease;
+transition:
+transform 0.25s ease;
 }
 
 .post-card-image:hover img {
-  transform: scale(1.04);
+transform: scale(1.04);
 }
 
 .post-card-body {
-  flex: 1;
+flex: 1;
 
-  min-width: 0;
+min-width: 0;
 
-  padding: 22px;
+padding: 22px;
 }
 
 .post-card-category {
-  margin-bottom: 7px;
+margin-bottom: 7px;
 
-  color: #2563eb;
+color: #2563eb;
 
-  font-size: 11px;
-  font-weight: 800;
+font-size: 11px;
+font-weight: 800;
 
-  text-transform: uppercase;
+text-transform: uppercase;
 
-  letter-spacing: 0.4px;
+letter-spacing: 0.4px;
 }
 
 .post-card-title {
-  margin: 0;
+margin: 0;
 
-  font-size: 22px;
+font-size: 22px;
 
-  line-height: 1.3;
+line-height: 1.3;
 }
 
 .post-card-title a {
-  color: #111827;
+color: #111827;
 
-  text-decoration: none;
+text-decoration: none;
 }
 
 .post-card-title a:hover {
-  color: #2563eb;
+color: #2563eb;
 }
 
 .post-card-date {
-  margin-top: 10px;
+margin-top: 10px;
 
-  color: #6b7280;
+color: #6b7280;
 
-  font-size: 13px;
+font-size: 13px;
 }
 
-
- 
+/* ============================================================
+POSTS VAZIOS
+============================================================ */
 
 .empty-posts {
-  padding: 40px;
+padding: 40px;
 
-  background: #ffffff;
+background: #ffffff;
 
-  border-radius: 12px;
+border-radius: 12px;
 
-  text-align: center;
+text-align: center;
 
-  color: #6b7280;
+color: #6b7280;
 }
 
+/* ============================================================
+LAYOUT DO ARTIGO
+================
 
- 
+ESTRUTURA:
+
+ESQUERDA
+220px
+
+GAP
+20px
+
+ARTIGO
+700px
+
+GAP
+20px
+
+DIREITA
+220px
+
+TOTAL:
+
+220 + 20 + 700 + 20 + 220
+
+= 1180px
+
+============================================================ */
 
 .article-layout {
 
-  width: 100%;
+width: 100%;
 
-  max-width: 1180px;
+max-width: 1180px;
 
-  margin: 0 auto;
+margin: 0 auto;
 
-  padding:
-    30px 0 60px;
+padding:
+30px 0 60px;
 
-  display: grid;
+display: grid;
 
-  grid-template-columns:
-    220px
-    minmax(0, 700px)
-    220px;
+grid-template-columns:
+220px
+minmax(0, 700px)
+220px;
 
-  column-gap: 20px;
+column-gap: 20px;
 
-  align-items: start;
+align-items: start;
 }
 
-
- 
+/* ============================================================
+SIDEBARS
+============================================================ */
 
 .article-sidebar {
 
-  width: 220px;
+width: 220px;
 
-  min-width: 220px;
-  max-width: 220px;
+min-width: 220px;
+max-width: 220px;
 
-  min-height: 1px;
+min-height: 1px;
 
-  overflow: visible;
+overflow: visible;
 
-  align-self: start;
+align-self: start;
 }
 
-
- 
+/* ============================================================
+STICKY DOS ANÚNCIOS
+============================================================ */
 
 .sidebar-sticky {
 
-  position: sticky;
+position: sticky;
 
-  top: 20px;
+top: 20px;
 
-  width: 100%;
+width: 100%;
 
-  align-self: start;
-
+align-self: start;
 }
 
-
- 
+/* ============================================================
+ANÚNCIOS LATERAIS
+============================================================ */
 
 .article-sidebar .ad-slot {
 
-  display: block;
+display: block;
 
-  width: 220px;
+width: 220px;
 
-  max-width: 220px;
+max-width: 220px;
 
-  min-width: 0;
+min-width: 0;
 
-  margin:
-    0 auto 25px;
+margin:
+0 auto 25px;
 
-  text-align: center;
+text-align: center;
 
-  overflow: visible;
+overflow: visible;
 }
 
-
- 
-
 .article-sidebar iframe {
-  max-width: 100%;
+max-width: 100%;
 }
 
 .article-sidebar img {
-  max-width: 100%;
-  height: auto;
+max-width: 100%;
+height: auto;
 }
 
-
- 
+/* ============================================================
+ARTIGO CENTRAL
+============================================================ */
 
 .article {
 
-  width: 100%;
+width: 100%;
 
-  max-width: 700px;
+max-width: 700px;
 
-  min-width: 0;
+min-width: 0;
 
-  margin: 0;
+margin: 0;
 
-  background: #ffffff;
+background: #ffffff;
 
-  border-radius: 14px;
+border-radius: 14px;
 
-  padding: 32px;
+padding: 32px;
 
-  box-shadow:
-    0 4px 20px rgba(0,0,0,0.05);
+box-shadow:
+0 4px 20px rgba(0,0,0,0.05);
 }
 
-
- 
+/* ============================================================
+CATEGORIA
+============================================================ */
 
 .article-category {
 
-  display: inline-block;
+display: inline-block;
 
-  margin:
-    0 0 14px;
+margin:
+0 0 14px;
 
-  padding:
-    5px 11px;
+padding:
+5px 11px;
 
-  border-radius: 20px;
+border-radius: 20px;
 
-  background: #eef2ff;
+background: #eef2ff;
 
-  color: #2563eb;
+color: #2563eb;
 
-  font-size: 12px;
+font-size: 12px;
 
-  font-weight: 800;
+font-weight: 800;
 
-  text-transform: uppercase;
+text-transform: uppercase;
 }
 
-
- 
+/* ============================================================
+TÍTULO
+============================================================ */
 
 .article-title {
 
-  margin: 0;
+margin: 0;
 
-  color: #111827;
+color: #111827;
 
-  font-size: 36px;
+font-size: 36px;
 
-  line-height: 1.16;
+line-height: 1.16;
 
-  letter-spacing: -0.4px;
+letter-spacing: -0.4px;
 }
 
-
- 
+/* ============================================================
+DATA
+============================================================ */
 
 .article-meta {
 
-  margin:
-    12px 0 25px;
+margin:
+12px 0 25px;
 
-  color: #6b7280;
+color: #6b7280;
 
-  font-size: 13px;
+font-size: 13px;
 }
 
-
- 
+/* ============================================================
+IMAGEM DE DESTAQUE
+============================================================ */
 
 .article-image {
 
-  width: 100%;
+width: 100%;
 
-  margin:
-    0 0 30px;
+margin:
+0 0 30px;
 }
 
 .article-image img {
 
-  display: block;
+display: block;
 
-  width: 100%;
+width: 100%;
 
-  height: auto;
+height: auto;
 
-  max-height: 460px;
+max-height: 460px;
 
-  object-fit: cover;
+object-fit: cover;
 
-  border-radius: 12px;
+border-radius: 12px;
 }
 
-
- 
+/* ============================================================
+CONTEÚDO
+============================================================ */
 
 .article-content {
 
-  width: 100%;
+width: 100%;
 
-  min-width: 0;
+min-width: 0;
 
-  color: #30343b;
+color: #30343b;
 
-  font-size: 18px;
+font-size: 18px;
 
-  line-height: 1.75;
+line-height: 1.75;
 
-  overflow-wrap: break-word;
+overflow-wrap: break-word;
 
-  word-wrap: break-word;
+word-wrap: break-word;
 }
 
 .article-content p {
 
-  margin:
-    0 0 22px;
+margin:
+0 0 22px;
 }
 
 .article-content h2 {
 
-  margin:
-    35px 0 14px;
+margin:
+35px 0 14px;
 
-  color: #111827;
+color: #111827;
 
-  font-size: 27px;
+font-size: 27px;
 
-  line-height: 1.3;
+line-height: 1.3;
 }
 
 .article-content h3 {
 
-  margin:
-    28px 0 12px;
+margin:
+28px 0 12px;
 
-  color: #111827;
+color: #111827;
 
-  font-size: 22px;
+font-size: 22px;
 
-  line-height: 1.3;
+line-height: 1.3;
 }
 
 .article-content img {
 
-  display: block;
+display: block;
 
-  width: auto;
+width: auto;
 
-  max-width: 100%;
+max-width: 100%;
 
-  height: auto;
+height: auto;
 
-  margin:
-    25px auto;
+margin:
+25px auto;
 
-  border-radius: 10px;
+border-radius: 10px;
 }
 
 .article-content a {
-  color: #2563eb;
+color: #2563eb;
 }
 
 .article-content blockquote {
 
-  margin:
-    25px 0;
+margin:
+25px 0;
 
-  padding:
-    16px 20px;
+padding:
+16px 20px;
 
-  border-left:
-    4px solid #2563eb;
+border-left:
+4px solid #2563eb;
 
-  background: #f3f4f6;
+background: #f3f4f6;
 
-  color: #4b5563;
+color: #4b5563;
 }
 
 .article-content ul,
 .article-content ol {
 
-  margin:
-    0 0 25px;
+margin:
+0 0 25px;
 
-  padding-left: 28px;
+padding-left: 28px;
 }
 
-
- 
+/* ============================================================
+VÍDEO
+============================================================ */
 
 .article-video {
 
-  width: 100%;
+width: 100%;
 
-  margin:
-    35px 0 10px;
+margin:
+35px 0 10px;
 }
 
 .article-video::before {
 
-  content: "Vídeo";
+content: "Vídeo";
 
-  display: block;
+display: block;
 
-  margin-bottom: 10px;
+margin-bottom: 10px;
 
-  color: #111827;
+color: #111827;
 
-  font-size: 15px;
+font-size: 15px;
 
-  font-weight: 700;
+font-weight: 700;
 }
 
 .youtube-wrapper {
 
-  position: relative;
+position: relative;
 
-  width: 100%;
+width: 100%;
 
-  aspect-ratio: 16 / 9;
+aspect-ratio: 16 / 9;
 
-  overflow: hidden;
+overflow: hidden;
 
-  border-radius: 12px;
+border-radius: 12px;
 
-  background: #000000;
+background: #000000;
 }
 
 .youtube-wrapper iframe {
 
-  position: absolute;
+position: absolute;
 
-  top: 0;
-  left: 0;
+top: 0;
+left: 0;
 
-  width: 100%;
-  height: 100%;
+width: 100%;
+height: 100%;
 
-  border: 0;
+border: 0;
 }
 
-
- 
+/* ============================================================
+FOOTER
+============================================================ */
 
 .site-footer {
 
-  width: 100%;
+width: 100%;
 
-  margin-top: 20px;
+margin-top: 20px;
 
-  padding:
-    30px 20px;
+padding:
+30px 20px;
 
-  background: #111827;
+background: #111827;
 
-  color: #d1d5db;
+color: #d1d5db;
 
-  text-align: center;
+text-align: center;
 
-  font-size: 13px;
+font-size: 13px;
 }
 
 .site-footer p {
-  margin: 5px 0;
+margin: 5px 0;
 }
 
 .footer-links {
-  margin-top: 8px;
+margin-top: 8px;
 }
 
 .footer-links a {
 
-  color: #d1d5db;
+color: #d1d5db;
 
-  text-decoration: none;
+text-decoration: none;
 }
 
 .footer-links a:hover {
-  color: #ffffff;
+color: #ffffff;
 }
 
-
- 
+/* ============================================================
+DESKTOP
+============================================================ */
 
 @media (min-width: 1201px) {
 
-  .article-layout {
+.article-layout {
 
-    grid-template-columns:
-      220px
-      minmax(0, 700px)
-      220px;
-
-  }
+```
+grid-template-columns:
+  220px
+  minmax(0, 700px)
+  220px;
+```
 
 }
 
+}
 
- 
+/* ============================================================
+NOTEBOOK
+============================================================ */
 
 @media (max-width: 1200px) {
 
-  .article-layout {
+.article-layout {
 
-    max-width: 1100px;
+```
+max-width: 1100px;
 
-    grid-template-columns:
-      180px
-      minmax(0, 700px)
-      180px;
+grid-template-columns:
+  180px
+  minmax(0, 700px)
+  180px;
 
-    column-gap: 15px;
+column-gap: 15px;
 
-    padding-left: 10px;
-    padding-right: 10px;
-
-  }
-
-  .article-sidebar {
-
-    width: 180px;
-
-    min-width: 180px;
-    max-width: 180px;
-
-  }
-
-  .article-sidebar .ad-slot {
-
-    width: 180px;
-
-    max-width: 180px;
-
-  }
-
-  .article {
-
-    max-width: 700px;
-
-    padding: 28px;
-
-  }
+padding-left: 10px;
+padding-right: 10px;
+```
 
 }
 
+.article-sidebar {
 
- 
+```
+width: 180px;
+
+min-width: 180px;
+max-width: 180px;
+```
+
+}
+
+.article-sidebar .ad-slot {
+
+```
+width: 180px;
+
+max-width: 180px;
+```
+
+}
+
+.article {
+
+```
+max-width: 700px;
+
+padding: 28px;
+```
+
+}
+
+}
+
+/* ============================================================
+NOTEBOOK MENOR
+============================================================ */
 
 @media (max-width: 1050px) {
 
-  .article-layout {
+.article-layout {
 
-    grid-template-columns:
-      150px
-      minmax(0, 1fr)
-      150px;
+```
+grid-template-columns:
+  150px
+  minmax(0, 1fr)
+  150px;
 
-    column-gap: 12px;
-
-  }
-
-  .article-sidebar {
-
-    width: 150px;
-
-    min-width: 150px;
-    max-width: 150px;
-
-  }
-
-  .article-sidebar .ad-slot {
-
-    width: 150px;
-
-    max-width: 150px;
-
-  }
-
-  .article {
-
-    padding: 25px;
-
-  }
-
-  .article-title {
-
-    font-size: 32px;
-
-  }
+column-gap: 12px;
+```
 
 }
 
+.article-sidebar {
 
- 
+```
+width: 150px;
+
+min-width: 150px;
+max-width: 150px;
+```
+
+}
+
+.article-sidebar .ad-slot {
+
+```
+width: 150px;
+
+max-width: 150px;
+```
+
+}
+
+.article {
+
+```
+padding: 25px;
+```
+
+}
+
+.article-title {
+
+```
+font-size: 32px;
+```
+
+}
+
+}
+
+/* ============================================================
+TABLET
+============================================================ */
 
 @media (max-width: 900px) {
 
-   
+.article-layout {
 
-  .article-layout {
+```
+display: block;
 
-    display: block;
+width: 100%;
 
-    width: 100%;
+max-width: 760px;
 
-    max-width: 760px;
+margin: 0 auto;
 
-    margin: 0 auto;
-
-    padding:
-      20px 15px 40px;
-
-  }
-
-  .article-sidebar {
-
-    display: none;
-
-  }
-
-  .article {
-
-    width: 100%;
-
-    max-width: 760px;
-
-    margin: 0 auto;
-
-    padding: 28px;
-
-  }
+padding:
+  20px 15px 40px;
+```
 
 }
 
+.article-sidebar {
 
- 
+```
+display: none;
+```
+
+}
+
+.article {
+
+```
+width: 100%;
+
+max-width: 760px;
+
+margin: 0 auto;
+
+padding: 28px;
+```
+
+}
+
+}
+
+/* ============================================================
+HEADER TABLET
+============================================================ */
 
 @media (max-width: 800px) {
 
-  .header-inner {
+.header-inner {
 
-    min-height: auto;
+```
+min-height: auto;
 
-    flex-direction: column;
+flex-direction: column;
 
-    align-items: flex-start;
+align-items: flex-start;
 
-    padding-top: 15px;
-    padding-bottom: 15px;
-
-  }
-
-  .main-nav {
-
-    width: 100%;
-
-    justify-content: flex-start;
-
-    gap: 12px;
-
-  }
-
-  .post-card {
-
-    display: block;
-
-  }
-
-  .post-card-image {
-
-    width: 100%;
-
-    height: auto;
-
-    aspect-ratio: 16 / 9;
-
-  }
-
-  .post-card-body {
-
-    padding: 20px;
-
-  }
+padding-top: 15px;
+padding-bottom: 15px;
+```
 
 }
 
+.main-nav {
 
- 
+```
+width: 100%;
+
+justify-content: flex-start;
+
+gap: 12px;
+```
+
+}
+
+.post-card {
+
+```
+display: block;
+```
+
+}
+
+.post-card-image {
+
+```
+width: 100%;
+
+height: auto;
+
+aspect-ratio: 16 / 9;
+```
+
+}
+
+.post-card-body {
+
+```
+padding: 20px;
+```
+
+}
+
+}
+
+/* ============================================================
+CELULAR
+============================================================ */
 
 @media (max-width: 600px) {
 
-  .container {
+.container {
 
-    padding-left: 15px;
-    padding-right: 15px;
-
-  }
-
-  .home-container {
-
-    padding:
-      20px 15px 40px;
-
-  }
-
-  .home-heading h1 {
-
-    font-size: 29px;
-
-  }
-
-  .main-nav {
-
-    gap: 10px;
-
-  }
-
-  .main-nav a {
-
-    font-size: 13px;
-
-  }
-
-  .post-card-title {
-
-    font-size: 20px;
-
-  }
-
-  .article-layout {
-
-    padding:
-      15px 10px 30px;
-
-  }
-
-  .article {
-
-    padding:
-      22px 17px;
-
-    border-radius: 10px;
-
-  }
-
-  .article-title {
-
-    font-size: 28px;
-
-    line-height: 1.18;
-
-  }
-
-  .article-content {
-
-    font-size: 16px;
-
-    line-height: 1.7;
-
-  }
-
-  .article-content h2 {
-
-    font-size: 24px;
-
-  }
-
-  .article-content h3 {
-
-    font-size: 20px;
-
-  }
-
-  .article-image img {
-
-    max-height: none;
-
-    border-radius: 9px;
-
-  }
-
-  .article-video {
-
-    margin-top: 30px;
-
-  }
-
-  .site-footer {
-
-    padding:
-      25px 15px;
-
-  }
+```
+padding-left: 15px;
+padding-right: 15px;
+```
 
 }
 
+.home-container {
 
- 
+```
+padding:
+  20px 15px 40px;
+```
+
+}
+
+.home-heading h1 {
+
+```
+font-size: 29px;
+```
+
+}
+
+.main-nav {
+
+```
+gap: 10px;
+```
+
+}
+
+.main-nav a {
+
+```
+font-size: 13px;
+```
+
+}
+
+.post-card-title {
+
+```
+font-size: 20px;
+```
+
+}
+
+.article-layout {
+
+```
+padding:
+  15px 10px 30px;
+```
+
+}
+
+.article {
+
+```
+padding:
+  22px 17px;
+
+border-radius: 10px;
+```
+
+}
+
+.article-title {
+
+```
+font-size: 28px;
+
+line-height: 1.18;
+```
+
+}
+
+.article-content {
+
+```
+font-size: 16px;
+
+line-height: 1.7;
+```
+
+}
+
+.article-content h2 {
+
+```
+font-size: 24px;
+```
+
+}
+
+.article-content h3 {
+
+```
+font-size: 20px;
+```
+
+}
+
+.article-image img {
+
+```
+max-height: none;
+
+border-radius: 9px;
+```
+
+}
+
+.article-video {
+
+```
+margin-top: 30px;
+```
+
+}
+
+.site-footer {
+
+```
+padding:
+  25px 15px;
+```
+
+}
+
+}
+
+/* ============================================================
+TELAS MUITO PEQUENAS
+============================================================ */
 
 @media (max-width: 380px) {
 
-  .article {
+.article {
 
-    padding:
-      18px 14px;
-
-  }
-
-  .article-title {
-
-    font-size: 25px;
-
-  }
-
-  .article-content {
-
-    font-size: 15.5px;
-
-  }
+```
+padding:
+  18px 14px;
+```
 
 }
 
+.article-title {
 
- 
+```
+font-size: 25px;
+```
+
+}
+
+.article-content {
+
+```
+font-size: 15.5px;
+```
+
+}
+
+}
+
+/* ============================================================
+ACESSIBILIDADE
+============================================================ */
 
 a:focus-visible {
 
-  outline:
-    3px solid #2563eb;
+outline:
+3px solid #2563eb;
 
-  outline-offset:
-    3px;
+outline-offset:
+3px;
 
 }
 
-
- 
-
-</style></style><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"W7Notícias","url":"https://w7noticias.com","potentialAction":{"@type":"SearchAction","target":"https://w7noticias.com/busca.html?q={search_term_string}","query-input":"required name=search_term_string"}}</script></head><body><header class="site-header"><div class="container header-inner"><a href="/" class="logo" aria-label="W7Notícias - Página inicial"><span class="logo-mark">W7</span><span class="logo-text">w7noticias</span></a><nav class="main-nav" aria-label="Navegação principal"><a href="/">Início</a><a href="/categoria/famosos.html">Famosos</a><a href="/categoria/curiosidades.html">Curiosidades</a><a href="/categoria/saude.html">Saúde</a><a href="/categoria/brasil.html">Brasil</a><a href="/categoria/mundo.html">Mundo</a><a href="/contato.html">Contato</a><a href="/busca.html" class="search-link">Buscar</a></nav></div></header><div class="container ad-top-container"><div class="ad-slot" data-ad-id="ANUNCIO_1787335167827" data-ad-position="TOPO" data-ad-order="1"><div class="test-ad-container">
+/* ============================================================
+FIM
+============================================================ */</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"W7Notícias","url":"https://w7noticias.com","potentialAction":{"@type":"SearchAction","target":"https://w7noticias.com/busca.html?q={search_term_string}","query-input":"required name=search_term_string"}}</script></head><body><header class="site-header"><div class="container header-inner"><a href="/" class="logo" aria-label="W7Notícias - Página inicial"><span class="logo-mark">W7</span><span class="logo-text">w7noticias</span></a><nav class="main-nav" aria-label="Navegação principal"><a href="/">Início</a><a href="/categoria/famosos.html">Famosos</a><a href="/categoria/curiosidades.html">Curiosidades</a><a href="/categoria/saude.html">Saúde</a><a href="/categoria/brasil.html">Brasil</a><a href="/categoria/mundo.html">Mundo</a><a href="/contato.html">Contato</a><a href="/busca.html" class="search-link">Buscar</a></nav></div></header><div class="container ad-top-container"><div class="ad-slot" data-ad-id="ANUNCIO_1787335167827" data-ad-position="TOPO" data-ad-order="1"><div class="test-ad-container">
 
   <span class="test-ad-label">
     ANÚNCIO DE TESTE
