@@ -16,16 +16,21 @@
 html {
   margin: 0;
   padding: 0;
+
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
+
   background: #f5f7fa;
   color: #202124;
+
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
+
+  overflow-x: hidden;
 }
 
 img {
@@ -45,7 +50,9 @@ a {
 .container {
   width: 100%;
   max-width: 1200px;
+
   margin: 0 auto;
+
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -57,9 +64,13 @@ a {
 
 .site-header {
   width: 100%;
+
   background: #ffffff;
+
   border-bottom: 1px solid #e5e7eb;
+
   position: relative;
+
   z-index: 100;
 }
 
@@ -67,6 +78,7 @@ a {
   min-height: 72px;
 
   display: flex;
+
   align-items: center;
   justify-content: space-between;
 
@@ -80,6 +92,7 @@ a {
 
 .logo {
   display: inline-flex;
+
   align-items: center;
 
   gap: 10px;
@@ -98,6 +111,7 @@ a {
   height: 42px;
 
   display: inline-flex;
+
   align-items: center;
   justify-content: center;
 
@@ -124,6 +138,7 @@ a {
 
 .main-nav {
   display: flex;
+
   align-items: center;
   justify-content: flex-end;
 
@@ -204,21 +219,35 @@ a {
   display: block;
 
   width: 100%;
+  max-width: 100%;
 
   margin: 0 auto 25px;
 
   text-align: center;
 
+  min-width: 0;
+
   overflow: visible;
 }
 
 .ad-slot iframe {
+  display: block;
+
   max-width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ad-slot img {
+  display: block;
+
   max-width: 100%;
+
   height: auto;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -228,14 +257,18 @@ a {
 
 .ad-inline-container {
   width: 100%;
+  max-width: 100%;
 
   margin: 30px 0;
 
   text-align: center;
+
+  overflow: hidden;
 }
 
 .ad-inline-container .ad-slot {
   width: 100%;
+  max-width: 100%;
 
   margin: 0 auto;
 }
@@ -264,6 +297,7 @@ a {
   color: #111827;
 
   font-size: 36px;
+
   line-height: 1.2;
 }
 
@@ -282,6 +316,7 @@ a {
   width: 100%;
 
   display: flex;
+
   flex-direction: column;
 
   gap: 20px;
@@ -296,6 +331,7 @@ a {
   width: 100%;
 
   display: flex;
+
   align-items: stretch;
 
   background: #ffffff;
@@ -351,6 +387,7 @@ a {
   color: #2563eb;
 
   font-size: 11px;
+
   font-weight: 800;
 
   text-transform: uppercase;
@@ -403,35 +440,36 @@ a {
 
 
 /* ============================================================
-   LAYOUT DO ARTIGO
+   LAYOUT PRINCIPAL DO ARTIGO
    ============================================================
 
-   DESKTOP:
+   DESKTOP GRANDE:
 
    ESQUERDA
    220px
 
-   GAP
-   20px
+   ESPAÇO
+   45px
 
    ARTIGO
-   700px
+   670px
 
-   GAP
-   20px
+   ESPAÇO
+   45px
 
    DIREITA
    220px
 
    TOTAL:
-   220 + 20 + 700 + 20 + 220
-   = 1180px
+
+   220 + 45 + 670 + 45 + 220
+   = 1200px
 
    ============================================================ */
 
 .article-layout {
   width: 100%;
-  max-width: 1180px;
+  max-width: 1200px;
 
   margin: 0 auto;
 
@@ -441,17 +479,27 @@ a {
 
   grid-template-columns:
     220px
-    minmax(0, 700px)
+    minmax(0, 670px)
     220px;
 
-  column-gap: 20px;
+  column-gap: 45px;
 
   align-items: start;
+
+  overflow: visible;
 }
 
 
 /* ============================================================
    SIDEBARS
+   ============================================================
+
+   IMPORTANTE:
+
+   O próprio ASIDE é sticky.
+
+   Não usamos overflow hidden aqui.
+
    ============================================================ */
 
 .article-sidebar {
@@ -462,24 +510,62 @@ a {
 
   min-height: 1px;
 
-  overflow: visible;
-
   align-self: start;
-}
 
-
-/* ============================================================
-   STICKY DOS ANÚNCIOS
-   ============================================================ */
-
-.sidebar-sticky {
+  position: -webkit-sticky;
   position: sticky;
 
   top: 20px;
 
-  width: 100%;
+  height: fit-content;
+
+  z-index: 1;
+
+  overflow: visible;
+}
+
+
+/* ============================================================
+   SIDEBAR ESQUERDA
+   ============================================================ */
+
+.article-sidebar-left {
+  grid-column: 1;
+
+  min-width: 0;
+}
+
+
+/* ============================================================
+   SIDEBAR DIREITA
+   ============================================================ */
+
+.article-sidebar-right {
+  grid-column: 3;
+
+  min-width: 0;
+}
+
+
+/* ============================================================
+   CONTAINER INTERNO DO SIDEBAR
+   ============================================================
+
+   Este elemento NÃO é sticky.
+
+   Ele apenas organiza os anúncios.
+
+   ============================================================ */
+
+.sidebar-sticky {
+  width: 220px;
+  max-width: 220px;
+
+  min-width: 0;
 
   align-self: start;
+
+  overflow: visible;
 }
 
 
@@ -491,18 +577,27 @@ a {
   display: block;
 
   width: 220px;
-
   max-width: 220px;
+
   min-width: 0;
 
-  margin: 0 auto 25px;
+  margin: 0 0 25px;
+
+  padding: 0;
 
   text-align: center;
 
   overflow: visible;
 }
 
-.article-sidebar iframe {
+
+/* ============================================================
+   ELEMENTOS INTERNOS DOS ANÚNCIOS
+   ============================================================ */
+
+.article-sidebar .ad-slot iframe,
+.article-sidebar .ad-slot ins,
+.article-sidebar .ad-slot img {
   display: block;
 
   max-width: 100%;
@@ -511,14 +606,25 @@ a {
   margin-right: auto;
 }
 
-.article-sidebar img {
-  display: block;
-
-  max-width: 100%;
+.article-sidebar .ad-slot img {
   height: auto;
+}
 
-  margin-left: auto;
-  margin-right: auto;
+
+/* ============================================================
+   PROTEÇÃO DO CONTEÚDO DO ANÚNCIO
+   ============================================================ */
+
+.article-sidebar .ad-slot > * {
+  max-width: 100% !important;
+}
+
+.article-sidebar .ad-slot iframe {
+  max-width: 100% !important;
+}
+
+.article-sidebar .ad-slot img {
+  max-width: 100% !important;
 }
 
 
@@ -526,10 +632,11 @@ a {
    ARTIGO CENTRAL
    ============================================================ */
 
-.article {
-  width: 100%;
+.article-layout > .article {
+  grid-column: 2;
 
-  max-width: 700px;
+  width: 100%;
+  max-width: 670px;
 
   min-width: 0;
 
@@ -543,6 +650,33 @@ a {
 
   box-shadow:
     0 4px 20px rgba(0, 0, 0, 0.05);
+
+  position: relative;
+
+  z-index: 2;
+
+  overflow: hidden;
+}
+
+.article {
+  width: 100%;
+
+  max-width: 670px;
+
+  min-width: 0;
+
+  margin: 0;
+
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  padding: 32px;
+
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.05);
+
+  overflow: hidden;
 }
 
 
@@ -838,14 +972,35 @@ a {
 @media (min-width: 1201px) {
 
   .article-layout {
-    max-width: 1180px;
+    width: 1200px;
+    max-width: 1200px;
 
     grid-template-columns:
       220px
-      minmax(0, 700px)
+      minmax(0, 670px)
       220px;
 
-    column-gap: 20px;
+    column-gap: 45px;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .article-sidebar {
+    width: 220px;
+
+    min-width: 220px;
+    max-width: 220px;
+  }
+
+  .sidebar-sticky {
+    width: 220px;
+
+    max-width: 220px;
+  }
+
+  .article-layout > .article {
+    max-width: 670px;
   }
 
 }
@@ -858,34 +1013,41 @@ a {
 @media (max-width: 1200px) and (min-width: 1051px) {
 
   .article-layout {
-    max-width: 1100px;
+    width: 100%;
+    max-width: 1200px;
 
     grid-template-columns:
-      180px
-      minmax(0, 700px)
-      180px;
+      190px
+      minmax(0, 1fr)
+      190px;
 
-    column-gap: 15px;
+    column-gap: 30px;
 
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .article-sidebar {
-    width: 180px;
+    width: 190px;
 
-    min-width: 180px;
-    max-width: 180px;
+    min-width: 190px;
+    max-width: 190px;
+  }
+
+  .sidebar-sticky {
+    width: 190px;
+
+    max-width: 190px;
   }
 
   .article-sidebar .ad-slot {
-    width: 180px;
+    width: 190px;
 
-    max-width: 180px;
+    max-width: 190px;
   }
 
   .article {
-    max-width: 700px;
+    max-width: 100%;
 
     padding: 28px;
   }
@@ -900,6 +1062,7 @@ a {
 @media (max-width: 1050px) and (min-width: 901px) {
 
   .article-layout {
+    width: 100%;
     max-width: 100%;
 
     grid-template-columns:
@@ -907,7 +1070,7 @@ a {
       minmax(0, 1fr)
       150px;
 
-    column-gap: 12px;
+    column-gap: 20px;
 
     padding-left: 10px;
     padding-right: 10px;
@@ -917,6 +1080,12 @@ a {
     width: 150px;
 
     min-width: 150px;
+    max-width: 150px;
+  }
+
+  .sidebar-sticky {
+    width: 150px;
+
     max-width: 150px;
   }
 
@@ -1153,7 +1322,35 @@ a:focus-visible {
 
   </a>
 
-</div></div></div><main class="container home-container"><section class="home-heading"><h1>Últimas notícias</h1><p>Informação, notícias e conteúdo para você.</p></section><section class="posts-list" aria-label="Últimas notícias"><article class="post-card"><a href="https://w7noticias.com/posts/new-post-for-marketing.html" class="post-card-image" aria-label="NEW POST FOR MARKETING"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="NEW POST FOR MARKETING" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Mundo</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/new-post-for-marketing.html">NEW POST FOR MARKETING</a></h2><div class="post-card-date">23/08/2026 00:00</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/teste-novo-artigo.html" class="post-card-image" aria-label="TESTE NOVO ARTIGO DOMINGO"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="TESTE NOVO ARTIGO DOMINGO" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Curiosidades</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/teste-novo-artigo.html">TESTE NOVO ARTIGO DOMINGO</a></h2><div class="post-card-date">22/08/2026 00:00</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/novo-artigo-com-slug-funcionando.html" class="post-card-image" aria-label="Novo artigo com slug HOJE"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="Novo artigo com slug HOJE" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Famosos</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/novo-artigo-com-slug-funcionando.html">Novo artigo com slug HOJE</a></h2><div class="post-card-date">22/08/2026 00:00</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/novo-stlugs-teste-novo.html" class="post-card-image" aria-label="novo stlugs teste novo"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="novo stlugs teste novo" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Famosos</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/novo-stlugs-teste-novo.html">novo stlugs teste novo</a></h2><div class="post-card-date">21/08/2026 00:00</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/novo-teste-de-salvamento-w7-nots.html" class="post-card-image" aria-label="Novo Teste de Salvamento W7 Nots"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="Novo Teste de Salvamento W7 Nots" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Famosos</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/novo-teste-de-salvamento-w7-nots.html">Novo Teste de Salvamento W7 Nots</a></h2><div class="post-card-date">22/08/2026 15:25</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/primeiro-artigo-de-teste-do-w7noticias.html" class="post-card-image" aria-label="Primeiro artigo de teste do w7noticias"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="Primeiro artigo de teste do w7noticias" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Brasil</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/primeiro-artigo-de-teste-do-w7noticias.html">Primeiro artigo de teste do w7noticias</a></h2><div class="post-card-date">21/08/2026 15:25</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/primeiro-artigo-de-teste-do-w7noticias.html" class="post-card-image" aria-label="Primeiro artigo de teste do w7noticias"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="Primeiro artigo de teste do w7noticias" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Brasil</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/primeiro-artigo-de-teste-do-w7noticias.html">Primeiro artigo de teste do w7noticias</a></h2><div class="post-card-date">21/08/2026 15:11</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/quinto-artigo-para-testar-salvamento.html" class="post-card-image" aria-label="Quinto artigo para testar SALVAMENTO"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="Quinto artigo para testar SALVAMENTO" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Mundo</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/quinto-artigo-para-testar-salvamento.html">Quinto artigo para testar SALVAMENTO</a></h2><div class="post-card-date">21/08/2026 00:00</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/quarto-artido-de-teste-botao-salvar.html" class="post-card-image" aria-label="Quarto artido de teste BOTAO"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="Quarto artido de teste BOTAO" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Saúde</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/quarto-artido-de-teste-botao-salvar.html">Quarto artido de teste BOTAO</a></h2><div class="post-card-date">21/08/2026 00:00</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/terceiro-artigo-de-teste-salvar.html" class="post-card-image" aria-label="Terceiro artigo de teste SALVAR"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="Terceiro artigo de teste SALVAR" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Curiosidades</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/terceiro-artigo-de-teste-salvar.html">Terceiro artigo de teste SALVAR</a></h2><div class="post-card-date">21/08/2026 00:00</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/segundo-artigo-do-blog-w7-noticias.html" class="post-card-image" aria-label="Segundo artigo do blog W7"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="Segundo artigo do blog W7" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Famosos</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/segundo-artigo-do-blog-w7-noticias.html">Segundo artigo do blog W7</a></h2><div class="post-card-date">21/08/2026 00:00</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/primeiro-artigo-de-teste-do-w7noticias.html" class="post-card-image" aria-label="Primeiro artigo de W7"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="Primeiro artigo de W7" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Brasil</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/primeiro-artigo-de-teste-do-w7noticias.html">Primeiro artigo de W7</a></h2><div class="post-card-date">20/08/2026 00:00</div></div></article></section></main><div class="container ad-final-container"><div class="ad-slot" data-ad-id="ANUNCIO_1787566697054" data-ad-position="FINAL" data-ad-order="1"><!-- Início do Bloco de Anúncio de Teste -->
+</div></div></div><main class="article-layout home-layout"><aside class="article-sidebar article-sidebar-left home-sidebar home-sidebar-left" aria-label="Publicidade"><div class="sidebar-sticky"><div class="ad-slot" data-ad-id="ANUNCIO_1787566619189" data-ad-position="ESQUERDA" data-ad-order="1"><div class="anuncio-teste-google" style="width: 300px; height: 250px; border: 1px solid #dadce0; background-color: #f8f9fa; display: flex; flex-direction: column; justify-content: space-between; padding: 8px; font-family: Arial, sans-serif; box-sizing: border-box;">
+  <span style="font-size: 10px; color: #70757a; text-transform: uppercase; letter-spacing: 0.5px;">Anúncio</span>
+  <div style="text-align: center;">
+    <p style="font-size: 14px; color: #1a0dab; margin: 0 0 4px 0; font-weight: bold;">Título do Anúncio de Teste</p>
+    <p style="font-size: 12px; color: #4d5156; margin: 0;">Este é um texto de exemplo para simular um banner publicitário na sua página web.</p>
+  </div>
+  <span style="font-size: 11px; color: #006621; text-align: right;">://siteexemplo.com.br</span>
+</div></div></div></aside><section class="home-main-column"><section class="home-heading"><h1>Últimas notícias</h1><p>Informação, notícias e conteúdo para você.</p></section><section class="posts-list" aria-label="Últimas notícias"><article class="post-card"><a href="https://w7noticias.com/posts/new-post-for-marketing.html" class="post-card-image" aria-label="NEW POST FOR MARKETING"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="NEW POST FOR MARKETING" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Mundo</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/new-post-for-marketing.html">NEW POST FOR MARKETING</a></h2><div class="post-card-date">23/08/2026 00:00</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/teste-novo-artigo.html" class="post-card-image" aria-label="TESTE NOVO ARTIGO DOMINGO"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="TESTE NOVO ARTIGO DOMINGO" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Curiosidades</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/teste-novo-artigo.html">TESTE NOVO ARTIGO DOMINGO</a></h2><div class="post-card-date">22/08/2026 00:00</div></div></article><div class="ad-inline-container home-ad-between-posts"><div class="ad-slot" data-ad-id="ANUNCIO_1787487511668" data-ad-position="ENTRE_PARAGRAFOS" data-ad-order="1"><!-- Início do Banner de Anúncio com Imagem -->
+<div class="adsense-image-test" style="margin: 20px auto; text-align: center; max-width: 300px; font-family: Arial, sans-serif; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border: 1px solid #ddd; background: #fff;">
+    
+    <!-- Tag de identificação pequena (Padrão do Google) -->
+    <div style="font-size: 10px; color: #999; text-align: right; padding: 4px 8px; background: #f9f9f9; border-bottom: 1px solid #eee;">
+        Anúncios Google
+    </div>
+    
+    <!-- Link e Imagem do Anúncio -->
+    <a href="https://google.com" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: block;">
+        <img src="https://picsum.photos" alt="Anúncio de Teste" style="display: block; width: 100%; height: 250px; object-fit: cover;" />
+    </box>
+    
+</div>
+<!-- Fim do Banner de Anúncio com Imagem --></div></div><article class="post-card"><a href="https://w7noticias.com/posts/novo-artigo-com-slug-funcionando.html" class="post-card-image" aria-label="Novo artigo com slug HOJE"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="Novo artigo com slug HOJE" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Famosos</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/novo-artigo-com-slug-funcionando.html">Novo artigo com slug HOJE</a></h2><div class="post-card-date">22/08/2026 00:00</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/novo-stlugs-teste-novo.html" class="post-card-image" aria-label="novo stlugs teste novo"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="novo stlugs teste novo" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Famosos</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/novo-stlugs-teste-novo.html">novo stlugs teste novo</a></h2><div class="post-card-date">21/08/2026 00:00</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/novo-teste-de-salvamento-w7-nots.html" class="post-card-image" aria-label="Novo Teste de Salvamento W7 Nots"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="Novo Teste de Salvamento W7 Nots" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Famosos</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/novo-teste-de-salvamento-w7-nots.html">Novo Teste de Salvamento W7 Nots</a></h2><div class="post-card-date">22/08/2026 15:25</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/primeiro-artigo-de-teste-do-w7noticias.html" class="post-card-image" aria-label="Primeiro artigo de teste do w7noticias"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="Primeiro artigo de teste do w7noticias" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Brasil</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/primeiro-artigo-de-teste-do-w7noticias.html">Primeiro artigo de teste do w7noticias</a></h2><div class="post-card-date">21/08/2026 15:25</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/primeiro-artigo-de-teste-do-w7noticias.html" class="post-card-image" aria-label="Primeiro artigo de teste do w7noticias"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="Primeiro artigo de teste do w7noticias" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Brasil</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/primeiro-artigo-de-teste-do-w7noticias.html">Primeiro artigo de teste do w7noticias</a></h2><div class="post-card-date">21/08/2026 15:11</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/quinto-artigo-para-testar-salvamento.html" class="post-card-image" aria-label="Quinto artigo para testar SALVAMENTO"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="Quinto artigo para testar SALVAMENTO" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Mundo</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/quinto-artigo-para-testar-salvamento.html">Quinto artigo para testar SALVAMENTO</a></h2><div class="post-card-date">21/08/2026 00:00</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/quarto-artido-de-teste-botao-salvar.html" class="post-card-image" aria-label="Quarto artido de teste BOTAO"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="Quarto artido de teste BOTAO" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Saúde</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/quarto-artido-de-teste-botao-salvar.html">Quarto artido de teste BOTAO</a></h2><div class="post-card-date">21/08/2026 00:00</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/terceiro-artigo-de-teste-salvar.html" class="post-card-image" aria-label="Terceiro artigo de teste SALVAR"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="Terceiro artigo de teste SALVAR" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Curiosidades</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/terceiro-artigo-de-teste-salvar.html">Terceiro artigo de teste SALVAR</a></h2><div class="post-card-date">21/08/2026 00:00</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/segundo-artigo-do-blog-w7-noticias.html" class="post-card-image" aria-label="Segundo artigo do blog W7"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="Segundo artigo do blog W7" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Famosos</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/segundo-artigo-do-blog-w7-noticias.html">Segundo artigo do blog W7</a></h2><div class="post-card-date">21/08/2026 00:00</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/primeiro-artigo-de-teste-do-w7noticias.html" class="post-card-image" aria-label="Primeiro artigo de W7"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="Primeiro artigo de W7" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Brasil</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/primeiro-artigo-de-teste-do-w7noticias.html">Primeiro artigo de W7</a></h2><div class="post-card-date">20/08/2026 00:00</div></div></article></section></section><aside class="article-sidebar article-sidebar-right home-sidebar home-sidebar-right" aria-label="Publicidade"><div class="sidebar-sticky"><div class="ad-slot" data-ad-id="ANUNCIO_1787566653670" data-ad-position="DIREITA" data-ad-order="1"><div class="anuncio-teste-google" style="width: 300px; height: 250px; border: 1px solid #dadce0; background-color: #f8f9fa; display: flex; flex-direction: column; justify-content: space-between; padding: 8px; font-family: Arial, sans-serif; box-sizing: border-box;">
+  <span style="font-size: 10px; color: #70757a; text-transform: uppercase; letter-spacing: 0.5px;">Anúncio</span>
+  <div style="text-align: center;">
+    <p style="font-size: 14px; color: #1a0dab; margin: 0 0 4px 0; font-weight: bold;">Título do Anúncio de Teste</p>
+    <p style="font-size: 12px; color: #4d5156; margin: 0;">Este é um texto de exemplo para simular um banner publicitário na sua página web.</p>
+  </div>
+  <span style="font-size: 11px; color: #006621; text-align: right;">://siteexemplo.com.br</span>
+</div></div></div></aside></main><div class="container ad-final-container"><div class="ad-slot" data-ad-id="ANUNCIO_1787566697054" data-ad-position="FINAL" data-ad-order="1"><!-- Início do Bloco de Anúncio de Teste -->
 <div class="adsense-test-container" style="margin: 20px auto; text-align: center; max-width: 100%;">
     <ins class="adsbygoogle"
          style="display:block; background:#f4f4f4; border:2px dashed #bbb; border-radius:4px; padding:20px; text-align:center; min-height:90px;"
