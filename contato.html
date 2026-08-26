@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Entre em contato com o W7Notícias. Envie dúvidas, sugestões, informações ou mensagens para nossa equipe."
+  >
+
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+
+  <link
+    rel="canonical"
+    href="https://w7noticias.com/contato.html"
+  >
+
+  <title>Contato — W7Notícias</title>
+
+
+  <style>
+
+    /* ============================================================
+       W7NOTICIAS
+       CONTATO.HTML
+       ============================================================ */
+
+    * {
+      box-sizing: border-box;
+    }
+
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+    body {
+
+      margin: 0;
+
+      padding: 0;
+
+      background: #ffffff;
+
+      color: #111111;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      line-height: 1.7;
+
+    }
+
+
+    /* ============================================================
+       CABEÇALHO
+       ============================================================ */
+
+    header {
+
+      width: 100%;
+
+      background: #ffffff;
+
+      border-bottom:
+        1px solid #e5e5e5;
+
+    }
+
+
+    .header-inner {
+
+      max-width: 1100px;
+
+      margin: 0 auto;
+
+      padding:
+        22px
+        25px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 25px;
+
+    }
+
+
+    /* ============================================================
+       LOGO
+       ============================================================ */
+
+    .logo {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 9px;
+
+      text-decoration: none;
+
+      white-space: nowrap;
+
+    }
+
+
+    .logo-w7 {
+
+      color: #1769d1;
+
+      font-size: 32px;
+
+      font-weight: 900;
+
+      letter-spacing: -2px;
+
+      line-height: 1;
+
+    }
+
+
+    .logo-noticias {
+
+      color: #1769d1;
+
+      font-size: 25px;
+
+      font-weight: 700;
+
+      letter-spacing: -1px;
+
+      line-height: 1;
+
+    }
+
+
+    /* ============================================================
+       MENU
+       ============================================================ */
+
+    nav {
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: flex-end;
+
+      flex-wrap: wrap;
+
+      gap: 20px;
+
+    }
+
+
+    nav a {
+
+      color: #111111;
+
+      text-decoration: none;
+
+      font-size: 15px;
+
+      font-weight: 600;
+
+      transition:
+        color 0.2s ease;
+
+    }
+
+
+    nav a:hover {
+
+      color: #1769d1;
+
+    }
+
+
+    /* ============================================================
+       CONTEÚDO
+       ============================================================ */
+
+    main {
+
+      max-width: 900px;
+
+      margin: 0 auto;
+
+      padding:
+        55px
+        25px
+        80px;
+
+    }
+
+
+    h1 {
+
+      margin:
+        0 0 30px;
+
+      color: #111111;
+
+      font-size: 38px;
+
+      line-height: 1.2;
+
+      font-weight: 800;
+
+    }
+
+
+    .intro {
+
+      margin-bottom: 35px;
+
+    }
+
+
+    .intro p {
+
+      margin:
+        0 0 18px;
+
+      color: #111111;
+
+      font-size: 17px;
+
+      line-height: 1.7;
+
+    }
+
+
+    /* ============================================================
+       FORMULÁRIO
+       ============================================================ */
+
+    .contato-form {
+
+      width: 100%;
+
+      margin-top: 30px;
+
+    }
+
+
+    .campo {
+
+      margin-bottom: 22px;
+
+    }
+
+
+    .campo label {
+
+      display: block;
+
+      margin-bottom: 8px;
+
+      color: #111111;
+
+      font-size: 16px;
+
+      font-weight: 700;
+
+    }
+
+
+    .campo input,
+    .campo textarea {
+
+      display: block;
+
+      width: 100%;
+
+      border:
+        1px solid #cccccc;
+
+      border-radius: 6px;
+
+      background: #ffffff;
+
+      color: #111111;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      font-size: 16px;
+
+      outline: none;
+
+      transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+
+    }
+
+
+    .campo input {
+
+      height: 50px;
+
+      padding:
+        0
+        15px;
+
+    }
+
+
+    .campo textarea {
+
+      min-height: 180px;
+
+      padding: 14px 15px;
+
+      resize: vertical;
+
+      line-height: 1.6;
+
+    }
+
+
+    .campo input:focus,
+    .campo textarea:focus {
+
+      border-color: #1769d1;
+
+      box-shadow:
+        0 0 0 3px
+        rgba(23, 105, 209, 0.10);
+
+    }
+
+
+    /* ============================================================
+       HONEYPOT
+       ============================================================ */
+
+    .campo-oculto {
+
+      position: absolute;
+
+      left: -9999px;
+
+      top: auto;
+
+      width: 1px;
+
+      height: 1px;
+
+      overflow: hidden;
+
+    }
+
+
+    /* ============================================================
+       BOTÃO
+       ============================================================ */
+
+    .botao-enviar {
+
+      display: inline-flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      min-width: 170px;
+
+      height: 50px;
+
+      padding:
+        0
+        25px;
+
+      border: none;
+
+      border-radius: 6px;
+
+      background: #1769d1;
+
+      color: #ffffff;
+
+      font-size: 16px;
+
+      font-weight: 700;
+
+      cursor: pointer;
+
+      transition:
+        background 0.2s ease,
+        opacity 0.2s ease;
+
+    }
+
+
+    .botao-enviar:hover {
+
+      background: #1257b0;
+
+    }
+
+
+    .botao-enviar:disabled {
+
+      opacity: 0.65;
+
+      cursor: not-allowed;
+
+    }
+
+
+    /* ============================================================
+       STATUS
+       ============================================================ */
+
+    .mensagem-status {
+
+      display: none;
+
+      margin-top: 22px;
+
+      padding:
+        15px
+        18px;
+
+      border-radius: 6px;
+
+      font-size: 16px;
+
+      line-height: 1.5;
+
+    }
+
+
+    .mensagem-status.sucesso {
+
+      display: block;
+
+      background: #eef8f0;
+
+      border:
+        1px solid #b9dfc0;
+
+      color: #1f6b2a;
+
+    }
+
+
+    .mensagem-status.erro {
+
+      display: block;
+
+      background: #fff2f2;
+
+      border:
+        1px solid #e4bcbc;
+
+      color: #9b2020;
+
+    }
+
+
+    /* ============================================================
+       RODAPÉ
+       ============================================================ */
+
+    footer {
+
+      background: #ffffff;
+
+      border-top:
+        1px solid #e5e5e5;
+
+    }
+
+
+    .footer-inner {
+
+      max-width: 1100px;
+
+      margin: 0 auto;
+
+      padding:
+        25px;
+
+      text-align: center;
+
+    }
+
+
+    .footer-inner p {
+
+      margin: 0;
+
+      color: #666666;
+
+      font-size: 14px;
+
+    }
+
+
+    .footer-inner a {
+
+      color: #111111;
+
+      text-decoration: none;
+
+    }
+
+
+    .footer-inner a:hover {
+
+      color: #1769d1;
+
+    }
+
+
+    /* ============================================================
+       RESPONSIVO
+       ============================================================ */
+
+    @media (max-width: 800px) {
+
+      .header-inner {
+
+        flex-direction: column;
+
+        justify-content: center;
+
+      }
+
+
+      nav {
+
+        justify-content: center;
+
+      }
+
+    }
+
+
+    @media (max-width: 600px) {
+
+      .header-inner {
+
+        padding:
+          18px
+          15px;
+
+      }
+
+
+      .logo-w7 {
+
+        font-size: 29px;
+
+      }
+
+
+      .logo-noticias {
+
+        font-size: 23px;
+
+      }
+
+
+      nav {
+
+        gap:
+          10px
+          15px;
+
+      }
+
+
+      nav a {
+
+        font-size: 14px;
+
+      }
+
+
+      main {
+
+        padding:
+          40px
+          18px
+          60px;
+
+      }
+
+
+      h1 {
+
+        font-size: 31px;
+
+      }
+
+
+      .intro p {
+
+        font-size: 16px;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- ==========================================================
+       CABEÇALHO
+       ========================================================== -->
+
+  <header>
+
+    <div class="header-inner">
+
+
+      <a
+        class="logo"
+        href="https://w7noticias.com/"
+        aria-label="W7Notícias - Página inicial"
+      >
+
+        <span class="logo-w7">
+          W7
+        </span>
+
+        <span class="logo-noticias">
+          noticias
+        </span>
+
+      </a>
+
+
+      <nav
+        aria-label="Menu principal"
+      >
+
+        <a href="https://w7noticias.com/">
+          Início
+        </a>
+
+        <a href="https://w7noticias.com/categoria/famosos.html">
+          Famosos
+        </a>
+
+        <a href="https://w7noticias.com/categoria/curiosidades.html">
+          Curiosidades
+        </a>
+
+        <a href="https://w7noticias.com/categoria/saude.html">
+          Saúde
+        </a>
+
+        <a href="https://w7noticias.com/categoria/brasil.html">
+          Brasil
+        </a>
+
+        <a href="https://w7noticias.com/categoria/mundo.html">
+          Mundo
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- ==========================================================
+       CONTEÚDO
+       ========================================================== -->
+
+  <main>
+
+
+    <h1>
+      Entre em contato
+    </h1>
+
+
+    <div class="intro">
+
+      <p>
+        Tem alguma dúvida, sugestão, informação ou deseja
+        falar conosco? Preencha o formulário abaixo.
+      </p>
+
+      <p>
+        Sua mensagem será encaminhada para nossa equipe,
+        que poderá entrar em contato através do e-mail
+        informado.
+      </p>
+
+    </div>
+
+
+
+    <!-- ========================================================
+         FORMULÁRIO
+         ======================================================== -->
+
+    <form
+      id="formContato"
+      class="contato-form"
+      novalidate
+    >
+
+
+      <!-- ======================================================
+           HONEYPOT
+           ====================================================== -->
+
+      <div
+        class="campo-oculto"
+        aria-hidden="true"
+      >
+
+        <label for="website">
+          Website
+        </label>
+
+        <input
+          type="text"
+          id="website"
+          name="website"
+          tabindex="-1"
+          autocomplete="off"
+        >
+
+      </div>
+
+
+
+      <!-- ======================================================
+           NOME
+           ====================================================== -->
+
+      <div class="campo">
+
+        <label for="nome">
+          Nome
+        </label>
+
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Digite seu nome"
+          maxlength="150"
+          autocomplete="name"
+          required
+        >
+
+      </div>
+
+
+
+      <!-- ======================================================
+           E-MAIL
+           ====================================================== -->
+
+      <div class="campo">
+
+        <label for="email">
+          E-mail
+        </label>
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Digite seu e-mail"
+          maxlength="200"
+          autocomplete="email"
+          required
+        >
+
+      </div>
+
+
+
+      <!-- ======================================================
+           ASSUNTO
+           ====================================================== -->
+
+      <div class="campo">
+
+        <label for="assunto">
+          Assunto
+        </label>
+
+        <input
+          type="text"
+          id="assunto"
+          name="assunto"
+          placeholder="Digite o assunto"
+          maxlength="200"
+          required
+        >
+
+      </div>
+
+
+
+      <!-- ======================================================
+           MENSAGEM
+           ====================================================== -->
+
+      <div class="campo">
+
+        <label for="mensagem">
+          Mensagem
+        </label>
+
+        <textarea
+          id="mensagem"
+          name="mensagem"
+          placeholder="Digite sua mensagem"
+          maxlength="10000"
+          required
+        ></textarea>
+
+      </div>
+
+
+
+      <!-- ======================================================
+           BOTÃO
+           ====================================================== -->
+
+      <button
+        type="submit"
+        id="botaoEnviar"
+        class="botao-enviar"
+      >
+        Enviar mensagem
+      </button>
+
+
+
+      <!-- ======================================================
+           STATUS
+           ====================================================== -->
+
+      <div
+        id="mensagemStatus"
+        class="mensagem-status"
+        role="status"
+        aria-live="polite"
+      ></div>
+
+
+    </form>
+
+  </main>
+
+
+
+  <!-- ==========================================================
+       RODAPÉ
+       ========================================================== -->
+
+  <footer>
+
+    <div class="footer-inner">
+
+      <p>
+
+        ©
+        <span id="anoAtual"></span>
+        W7Notícias.
+        Todos os direitos reservados.
+
+        &nbsp;|&nbsp;
+
+        <a
+          href="https://w7noticias.com/politica-de-privacidade.html"
+        >
+          Política de Privacidade
+        </a>
+
+      </p>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- ==========================================================
+       JAVASCRIPT
+       ========================================================== -->
+
+  <script>
+
+    "use strict";
+
+
+    /* ============================================================
+       URL DO WEB APP — GOOGLE APPS SCRIPT
+       ============================================================ */
+
+    const URL_CONTATO_GAS =
+      "https://script.google.com/macros/s/AKfycbxQRyqQW_rbRgbP7UGEHcWylY9YejhMvePcb6FENaavYovB52h_OKatdjPRbTckRY4h8w/exec";
+
+
+    /* ============================================================
+       ELEMENTOS
+       ============================================================ */
+
+    const formulario =
+      document.getElementById(
+        "formContato"
+      );
+
+
+    const botaoEnviar =
+      document.getElementById(
+        "botaoEnviar"
+      );
+
+
+    const mensagemStatus =
+      document.getElementById(
+        "mensagemStatus"
+      );
+
+
+    /* ============================================================
+       ANO AUTOMÁTICO
+       ============================================================ */
+
+    document.getElementById(
+      "anoAtual"
+    ).textContent =
+      new Date().getFullYear();
+
+
+    /* ============================================================
+       STATUS
+       ============================================================ */
+
+    function mostrarStatus(
+      mensagem,
+      tipo
+    ) {
+
+      mensagemStatus.textContent =
+        mensagem;
+
+      mensagemStatus.className =
+        "mensagem-status " +
+        tipo;
+
+    }
+
+
+    /* ============================================================
+       LIMPAR STATUS
+       ============================================================ */
+
+    function limparStatus() {
+
+      mensagemStatus.textContent =
+        "";
+
+      mensagemStatus.className =
+        "mensagem-status";
+
+    }
+
+
+    /* ============================================================
+       ENVIO
+       ============================================================ */
+
+    formulario.addEventListener(
+      "submit",
+      async function(evento) {
+
+        evento.preventDefault();
+
+
+        limparStatus();
+
+
+        /* --------------------------------------------------------
+           DADOS
+           -------------------------------------------------------- */
+
+        const nome =
+          document
+            .getElementById("nome")
+            .value
+            .trim();
+
+
+        const email =
+          document
+            .getElementById("email")
+            .value
+            .trim();
+
+
+        const assunto =
+          document
+            .getElementById("assunto")
+            .value
+            .trim();
+
+
+        const mensagem =
+          document
+            .getElementById("mensagem")
+            .value
+            .trim();
+
+
+        const website =
+          document
+            .getElementById("website")
+            .value
+            .trim();
+
+
+        /* --------------------------------------------------------
+           VALIDAÇÕES
+           -------------------------------------------------------- */
+
+        if (!nome) {
+
+          mostrarStatus(
+            "Informe seu nome.",
+            "erro"
+          );
+
+          document
+            .getElementById("nome")
+            .focus();
+
+          return;
+
+        }
+
+
+        if (!email) {
+
+          mostrarStatus(
+            "Informe seu e-mail.",
+            "erro"
+          );
+
+          document
+            .getElementById("email")
+            .focus();
+
+          return;
+
+        }
+
+
+        if (
+          !/^[^\s@]+@[^\s@]+\.[^\s@]+$/
+            .test(email)
+        ) {
+
+          mostrarStatus(
+            "Informe um endereço de e-mail válido.",
+            "erro"
+          );
+
+          document
+            .getElementById("email")
+            .focus();
+
+          return;
+
+        }
+
+
+        if (!assunto) {
+
+          mostrarStatus(
+            "Informe o assunto.",
+            "erro"
+          );
+
+          document
+            .getElementById("assunto")
+            .focus();
+
+          return;
+
+        }
+
+
+        if (!mensagem) {
+
+          mostrarStatus(
+            "Digite sua mensagem.",
+            "erro"
+          );
+
+          document
+            .getElementById("mensagem")
+            .focus();
+
+          return;
+
+        }
+
+
+        /* --------------------------------------------------------
+           HONEYPOT
+           -------------------------------------------------------- */
+
+        if (website) {
+
+          formulario.reset();
+
+          mostrarStatus(
+            "Mensagem enviada com sucesso.",
+            "sucesso"
+          );
+
+          return;
+
+        }
+
+
+        /* --------------------------------------------------------
+           BLOQUEAR BOTÃO
+           -------------------------------------------------------- */
+
+        botaoEnviar.disabled =
+          true;
+
+        botaoEnviar.textContent =
+          "Enviando...";
+
+
+        /* --------------------------------------------------------
+           OBJETO JSON
+           -------------------------------------------------------- */
+
+        const dados = {
+
+          nome:
+            nome,
+
+          email:
+            email,
+
+          assunto:
+            assunto,
+
+          mensagem:
+            mensagem
+
+        };
+
+
+        /* --------------------------------------------------------
+           ENVIO AO GOOGLE APPS SCRIPT
+           
+           mode: no-cors é intencional.
+           
+           O Apps Script pode redirecionar a requisição /exec
+           e o navegador pode bloquear a leitura da resposta
+           por política CORS.
+
+           A requisição POST continua sendo enviada ao GAS.
+           -------------------------------------------------------- */
+
+        try {
+
+          await fetch(
+            URL_CONTATO_GAS,
+            {
+
+              method:
+                "POST",
+
+              mode:
+                "no-cors",
+
+              headers: {
+
+                "Content-Type":
+                  "text/plain;charset=utf-8"
+
+              },
+
+              body:
+                JSON.stringify(
+                  dados
+                )
+
+            }
+          );
+
+
+          /* ------------------------------------------------------
+             SUCESSO
+             ------------------------------------------------------ */
+
+          formulario.reset();
+
+          mostrarStatus(
+            "Mensagem enviada com sucesso. Obrigado pelo contato!",
+            "sucesso"
+          );
+
+
+        }
+
+        catch (erro) {
+
+          console.error(
+            "Erro ao enviar formulário:",
+            erro
+          );
+
+
+          mostrarStatus(
+            "Não foi possível enviar sua mensagem. Tente novamente.",
+            "erro"
+          );
+
+        }
+
+
+        /* --------------------------------------------------------
+           RESTAURAR BOTÃO
+           -------------------------------------------------------- */
+
+        botaoEnviar.disabled =
+          false;
+
+        botaoEnviar.textContent =
+          "Enviar mensagem";
+
+      }
+    );
+
+  </script>
+
+
+</body>
+
+</html>
