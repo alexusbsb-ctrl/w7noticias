@@ -1,4 +1,13 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Este é o primeiro artigo de teste do w7noticias. Segundo título Conteúdo utilizado apenas para validar o sistema."><meta name="robots" content="index, follow"><link rel="canonical" href="https://w7noticias.com/posts/novo-stlugs-teste-novo.html"><link rel="icon" type="image/png" href="https://w7noticias.com/favicon.png"><title>novo stlugs teste novo | W7Notícias</title><meta property="og:type" content="article"><meta property="og:site_name" content="W7Notícias"><meta property="og:title" content="novo stlugs teste novo"><meta property="og:description" content="Este é o primeiro artigo de teste do w7noticias. Segundo título Conteúdo utilizado apenas para validar o sistema."><meta property="og:url" content="https://w7noticias.com/posts/novo-stlugs-teste-novo.html"><meta property="og:image" content="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="novo stlugs teste novo"><meta name="twitter:description" content="Este é o primeiro artigo de teste do w7noticias. Segundo título Conteúdo utilizado apenas para validar o sistema."><meta name="twitter:image" content="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG"><style>
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Este é o primeiro artigo de teste do w7noticias. Segundo título Conteúdo utilizado apenas para validar o sistema."><meta name="robots" content="index, follow"><link rel="canonical" href="https://w7noticias.com/posts/novo-stlugs-teste-novo.html"><link rel="icon" type="image/png" href="https://w7noticias.com/favicon.png"><title>novo stlugs teste novo | W7Notícias</title><meta property="og:type" content="article"><meta property="og:site_name" content="W7Notícias"><meta property="og:title" content="novo stlugs teste novo"><meta property="og:description" content="Este é o primeiro artigo de teste do w7noticias. Segundo título Conteúdo utilizado apenas para validar o sistema."><meta property="og:url" content="https://w7noticias.com/posts/novo-stlugs-teste-novo.html"><meta property="og:image" content="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="novo stlugs teste novo"><meta name="twitter:description" content="Este é o primeiro artigo de teste do w7noticias. Segundo título Conteúdo utilizado apenas para validar o sistema."><meta name="twitter:image" content="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG"><style>/* ============================================================
+   W7NOTICIAS
+   STYLE.HTML
+   CSS PÚBLICO
+   ============================================================ */
+
+
+/* ============================================================
+   RESET
+   ============================================================ */
 
 * {
   box-sizing: border-box;
@@ -7,21 +16,43 @@
 html {
   margin: 0;
   padding: 0;
+
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
+
   background: #f5f7fa;
   color: #202124;
+
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.7;
+  line-height: 1.6;
+
+  overflow-x: hidden;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+}
+
+
+/* ============================================================
+   CONTAINER
+   ============================================================ */
 
 .container {
   width: 100%;
   max-width: 1200px;
+
   margin: 0 auto;
+
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -32,205 +63,702 @@ body {
    ============================================================ */
 
 .site-header {
+  width: 100%;
+
   background: #ffffff;
+
   border-bottom: 1px solid #e5e7eb;
+
+  position: relative;
+
+  z-index: 100;
 }
 
 .header-inner {
   min-height: 72px;
+
   display: flex;
+
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+
+  gap: 25px;
 }
+
+
+/* ============================================================
+   LOGO
+   ============================================================ */
 
 .logo {
   display: inline-flex;
+
   align-items: center;
+
   gap: 10px;
+
   text-decoration: none;
-  color: #111827;
+
+  color: #2563eb;
+
   font-weight: 700;
+
   flex-shrink: 0;
 }
 
 .logo-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   width: 42px;
   height: 42px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
   border-radius: 10px;
-  background: #111827;
+
+  background: #2563eb;
   color: #ffffff;
+
   font-size: 15px;
+  font-weight: 800;
 }
 
 .logo-text {
+  color: #2563eb;
+
   font-size: 20px;
+  font-weight: 800;
 }
+
+
+/* ============================================================
+   MENU
+   ============================================================ */
 
 .main-nav {
   display: flex;
+
   align-items: center;
+  justify-content: flex-end;
+
   gap: 18px;
+
   flex-wrap: wrap;
 }
 
 .main-nav a {
   color: #4b5563;
+
   text-decoration: none;
+
   font-size: 14px;
   font-weight: 600;
+
+  transition: color 0.2s ease;
 }
 
 .main-nav a:hover {
-  color: #111827;
+  color: #2563eb;
+}
+
+.search-link {
+  color: #2563eb !important;
 }
 
 
 /* ============================================================
-   ANÚNCIOS
+   ANÚNCIO TOPO
    ============================================================ */
 
 .ad-top-container {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.ad-final-container {
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
-
-.ad-slot {
   width: 100%;
-  margin: 15px auto;
-  text-align: center;
-  overflow: hidden;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 15px 20px 20px;
 }
 
-.ad-inline-container {
-  margin: 30px 0;
+.ad-top-container .ad-slot {
+  width: 100%;
+
+  margin: 0 auto 20px;
+
+  text-align: center;
 }
 
 
 /* ============================================================
-   VÍDEO YOUTUBE
+   ANÚNCIO FINAL
    ============================================================ */
 
-.article-video {
+.ad-final-container {
   width: 100%;
-  margin: 40px 0 10px 0;
-  padding-top: 10px;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 20px 20px 35px;
 }
 
-.article-video::before {
-  content: "Vídeo";
-  display: block;
-  margin-bottom: 12px;
-  color: #111827;
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.youtube-wrapper {
-  position: relative;
+.ad-final-container .ad-slot {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  border-radius: 14px;
-  background: #000000;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-}
 
-.youtube-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
+  margin: 0 auto 20px;
+
+  text-align: center;
 }
 
 
 /* ============================================================
-   LAYOUT ARTIGO
+   ANÚNCIO GENÉRICO
+   ============================================================ */
+
+.ad-slot {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+
+  margin: 0 auto 25px;
+
+  text-align: center;
+
+  min-width: 0;
+
+  overflow: visible;
+}
+
+.ad-slot iframe {
+  display: block;
+
+  max-width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ad-slot img {
+  display: block;
+
+  max-width: 100%;
+
+  height: auto;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ============================================================
+   ANÚNCIOS ENTRE PARÁGRAFOS
+   ============================================================ */
+
+.ad-inline-container {
+  width: 100%;
+  max-width: 100%;
+
+  margin: 30px 0;
+
+  text-align: center;
+
+  overflow: hidden;
+}
+
+.ad-inline-container .ad-slot {
+  width: 100%;
+  max-width: 100%;
+
+  margin: 0 auto;
+}
+
+
+/* ============================================================
+   HOME
+   ============================================================ */
+
+.home-container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 20px 20px 50px;
+}
+
+.home-heading {
+  margin: 0 0 30px;
+}
+
+.home-heading h1 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 36px;
+
+  line-height: 1.2;
+}
+
+.home-heading p {
+  margin: 8px 0 0;
+
+  color: #6b7280;
+}
+
+
+/* ============================================================
+   LISTA DE POSTS
+   ============================================================ */
+
+.posts-list {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+
+/* ============================================================
+   CARD DO POST
+   ============================================================ */
+
+.post-card {
+  width: 100%;
+
+  display: flex;
+
+  align-items: stretch;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 3px 14px rgba(0, 0, 0, 0.04);
+}
+
+.post-card-image {
+  display: block;
+
+  flex: 0 0 250px;
+
+  width: 250px;
+  height: 165px;
+
+  overflow: hidden;
+}
+
+.post-card-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.25s ease;
+}
+
+.post-card-image:hover img {
+  transform: scale(1.04);
+}
+
+.post-card-body {
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 22px;
+}
+
+.post-card-category {
+  margin-bottom: 7px;
+
+  color: #2563eb;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.4px;
+}
+
+.post-card-title {
+  margin: 0;
+
+  font-size: 22px;
+
+  line-height: 1.3;
+}
+
+.post-card-title a {
+  color: #111827;
+
+  text-decoration: none;
+}
+
+.post-card-title a:hover {
+  color: #2563eb;
+}
+
+.post-card-date {
+  margin-top: 10px;
+
+  color: #6b7280;
+
+  font-size: 13px;
+}
+
+
+/* ============================================================
+   POSTS VAZIOS
+   ============================================================ */
+
+.empty-posts {
+  padding: 40px;
+
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  text-align: center;
+
+  color: #6b7280;
+}
+
+
+/* ============================================================
+   LAYOUT PRINCIPAL DO ARTIGO
+   ============================================================
+
+   DESKTOP GRANDE:
+
+   ESQUERDA
+   220px
+
+   ESPAÇO
+   45px
+
+   ARTIGO
+   670px
+
+   ESPAÇO
+   45px
+
+   DIREITA
+   220px
+
+   TOTAL:
+
+   220 + 45 + 670 + 45 + 220
+   = 1200px
+
    ============================================================ */
 
 .article-layout {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 30px 0 60px;
+
   display: grid;
-  grid-template-columns: 180px minmax(0,760px) 180px;
-  justify-content: center;
-  gap: 20px;
+
+  grid-template-columns:
+    220px
+    minmax(0, 670px)
+    220px;
+
+  column-gap: 45px;
+
   align-items: start;
-  padding-top: 25px;
-  padding-bottom: 45px;
+
+  overflow: visible;
 }
 
+
+/* ============================================================
+   SIDEBARS
+   ============================================================
+
+   IMPORTANTE:
+
+   O próprio ASIDE é sticky.
+
+   Não usamos overflow hidden aqui.
+
+   ============================================================ */
+
 .article-sidebar {
+  width: 220px;
+
+  min-width: 220px;
+  max-width: 220px;
+
+  min-height: 1px;
+
+  align-self: start;
+
+  position: -webkit-sticky;
+  position: sticky;
+
+  top: 20px;
+
+  height: fit-content;
+
+  z-index: 1;
+
+  overflow: visible;
+}
+
+
+/* ============================================================
+   SIDEBAR ESQUERDA
+   ============================================================ */
+
+.article-sidebar-left {
+  grid-column: 1;
+
   min-width: 0;
 }
 
-.article-sidebar .ad-slot {
-  position: sticky;
-  top: 20px;
+
+/* ============================================================
+   SIDEBAR DIREITA
+   ============================================================ */
+
+.article-sidebar-right {
+  grid-column: 3;
+
+  min-width: 0;
 }
 
 
 /* ============================================================
-   ARTIGO
+   CONTAINER INTERNO DO SIDEBAR
+   ============================================================
+
+   Este elemento NÃO é sticky.
+
+   Ele apenas organiza os anúncios.
+
    ============================================================ */
 
-.article {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 40px;
-  box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+.sidebar-sticky {
+  width: 220px;
+  max-width: 220px;
+
+  min-width: 0;
+
+  align-self: start;
+
+  overflow: visible;
 }
+
+
+/* ============================================================
+   ANÚNCIOS LATERAIS
+   ============================================================ */
+
+.article-sidebar .ad-slot {
+  display: block;
+
+  width: 220px;
+  max-width: 220px;
+
+  min-width: 0;
+
+  margin: 0 0 25px;
+
+  padding: 0;
+
+  text-align: center;
+
+  overflow: visible;
+}
+
+
+/* ============================================================
+   ELEMENTOS INTERNOS DOS ANÚNCIOS
+   ============================================================ */
+
+.article-sidebar .ad-slot iframe,
+.article-sidebar .ad-slot ins,
+.article-sidebar .ad-slot img {
+  display: block;
+
+  max-width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.article-sidebar .ad-slot img {
+  height: auto;
+}
+
+
+/* ============================================================
+   PROTEÇÃO DO CONTEÚDO DO ANÚNCIO
+   ============================================================ */
+
+.article-sidebar .ad-slot > * {
+  max-width: 100% !important;
+}
+
+.article-sidebar .ad-slot iframe {
+  max-width: 100% !important;
+}
+
+.article-sidebar .ad-slot img {
+  max-width: 100% !important;
+}
+
+
+/* ============================================================
+   ARTIGO CENTRAL
+   ============================================================ */
+
+.article-layout > .article {
+  grid-column: 2;
+
+  width: 100%;
+  max-width: 670px;
+
+  min-width: 0;
+
+  margin: 0;
+
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  padding: 32px;
+
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.05);
+
+  position: relative;
+
+  z-index: 2;
+
+  overflow: hidden;
+}
+
+.article {
+  width: 100%;
+
+  max-width: 670px;
+
+  min-width: 0;
+
+  margin: 0;
+
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  padding: 32px;
+
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.05);
+
+  overflow: hidden;
+}
+
+
+/* ============================================================
+   CATEGORIA
+   ============================================================ */
 
 .article-category {
   display: inline-block;
-  margin-bottom: 15px;
-  padding: 5px 12px;
+
+  margin: 0 0 14px;
+
+  padding: 5px 11px;
+
   border-radius: 20px;
+
   background: #eef2ff;
-  color: #3730a3;
-  font-size: 13px;
-  font-weight: 700;
+
+  color: #2563eb;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
   text-transform: uppercase;
-}
-
-.article-title {
-  margin: 0;
-  color: #111827;
-  font-size: 42px;
-  line-height: 1.15;
-  letter-spacing: -0.5px;
-}
-
-.article-meta {
-  margin-top: 15px;
-  margin-bottom: 30px;
-  color: #6b7280;
-  font-size: 14px;
 }
 
 
 /* ============================================================
-   IMAGEM
+   TÍTULO
+   ============================================================ */
+
+.article-title {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 36px;
+
+  line-height: 1.16;
+
+  letter-spacing: -0.4px;
+
+  overflow-wrap: break-word;
+}
+
+
+/* ============================================================
+   DATA
+   ============================================================ */
+
+.article-meta {
+  margin: 12px 0 25px;
+
+  color: #6b7280;
+
+  font-size: 13px;
+}
+
+
+/* ============================================================
+   IMAGEM DE DESTAQUE
    ============================================================ */
 
 .article-image {
-  margin: 0 0 35px 0;
+  width: 100%;
+
+  margin: 0 0 30px;
 }
 
 .article-image img {
   display: block;
+
   width: 100%;
-  max-height: 520px;
+
+  height: auto;
+
+  max-height: 460px;
+
   object-fit: cover;
-  border-radius: 14px;
+
+  border-radius: 12px;
 }
 
 
@@ -239,35 +767,58 @@ body {
    ============================================================ */
 
 .article-content {
+  width: 100%;
+
+  min-width: 0;
+
   color: #30343b;
+
   font-size: 18px;
+
+  line-height: 1.75;
+
+  overflow-wrap: break-word;
+
+  word-wrap: break-word;
+
+  word-break: normal;
 }
 
 .article-content p {
-  margin-top: 0;
-  margin-bottom: 22px;
+  margin: 0 0 22px;
 }
 
 .article-content h2 {
-  margin-top: 38px;
-  margin-bottom: 15px;
+  margin: 35px 0 14px;
+
   color: #111827;
-  font-size: 28px;
+
+  font-size: 27px;
+
   line-height: 1.3;
 }
 
 .article-content h3 {
-  margin-top: 30px;
-  margin-bottom: 12px;
+  margin: 28px 0 12px;
+
   color: #111827;
-  font-size: 23px;
+
+  font-size: 22px;
+
+  line-height: 1.3;
 }
 
 .article-content img {
   display: block;
+
+  width: auto;
+
   max-width: 100%;
+
   height: auto;
+
   margin: 25px auto;
+
   border-radius: 10px;
 }
 
@@ -277,16 +828,101 @@ body {
 
 .article-content blockquote {
   margin: 25px 0;
-  padding: 18px 22px;
-  border-left: 4px solid #2563eb;
+
+  padding: 16px 20px;
+
+  border-left:
+    4px solid #2563eb;
+
   background: #f3f4f6;
+
   color: #4b5563;
 }
 
 .article-content ul,
 .article-content ol {
-  margin-bottom: 25px;
-  padding-left: 30px;
+  margin: 0 0 25px;
+
+  padding-left: 28px;
+}
+
+.article-content table {
+  width: 100%;
+
+  max-width: 100%;
+
+  border-collapse: collapse;
+
+  display: block;
+
+  overflow-x: auto;
+}
+
+.article-content pre {
+  max-width: 100%;
+
+  overflow-x: auto;
+
+  padding: 15px;
+
+  background: #f3f4f6;
+
+  border-radius: 8px;
+}
+
+.article-content code {
+  overflow-wrap: break-word;
+}
+
+
+/* ============================================================
+   VÍDEO
+   ============================================================ */
+
+.article-video {
+  width: 100%;
+
+  margin: 35px 0 10px;
+}
+
+.article-video::before {
+  content: "Vídeo";
+
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #111827;
+
+  font-size: 15px;
+
+  font-weight: 700;
+}
+
+.youtube-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+
+  border-radius: 12px;
+
+  background: #000000;
+}
+
+.youtube-wrapper iframe {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border: 0;
 }
 
 
@@ -295,11 +931,178 @@ body {
    ============================================================ */
 
 .site-footer {
-  padding: 30px 0;
+  width: 100%;
+
+  margin-top: 20px;
+
+  padding: 30px 20px;
+
   background: #111827;
+
   color: #d1d5db;
+
   text-align: center;
+
   font-size: 13px;
+}
+
+.site-footer p {
+  margin: 5px 0;
+}
+
+.footer-links {
+  margin-top: 8px;
+}
+
+.footer-links a {
+  color: #d1d5db;
+
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+
+/* ============================================================
+   DESKTOP GRANDE
+   ============================================================ */
+
+@media (min-width: 1201px) {
+
+  .article-layout {
+    width: 1200px;
+    max-width: 1200px;
+
+    grid-template-columns:
+      220px
+      minmax(0, 670px)
+      220px;
+
+    column-gap: 45px;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .article-sidebar {
+    width: 220px;
+
+    min-width: 220px;
+    max-width: 220px;
+  }
+
+  .sidebar-sticky {
+    width: 220px;
+
+    max-width: 220px;
+  }
+
+  .article-layout > .article {
+    max-width: 670px;
+  }
+
+}
+
+
+/* ============================================================
+   NOTEBOOK
+   ============================================================ */
+
+@media (max-width: 1200px) and (min-width: 1051px) {
+
+  .article-layout {
+    width: 100%;
+    max-width: 1200px;
+
+    grid-template-columns:
+      190px
+      minmax(0, 1fr)
+      190px;
+
+    column-gap: 30px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .article-sidebar {
+    width: 190px;
+
+    min-width: 190px;
+    max-width: 190px;
+  }
+
+  .sidebar-sticky {
+    width: 190px;
+
+    max-width: 190px;
+  }
+
+  .article-sidebar .ad-slot {
+    width: 190px;
+
+    max-width: 190px;
+  }
+
+  .article {
+    max-width: 100%;
+
+    padding: 28px;
+  }
+
+}
+
+
+/* ============================================================
+   NOTEBOOK MENOR
+   ============================================================ */
+
+@media (max-width: 1050px) and (min-width: 901px) {
+
+  .article-layout {
+    width: 100%;
+    max-width: 100%;
+
+    grid-template-columns:
+      150px
+      minmax(0, 1fr)
+      150px;
+
+    column-gap: 20px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .article-sidebar {
+    width: 150px;
+
+    min-width: 150px;
+    max-width: 150px;
+  }
+
+  .sidebar-sticky {
+    width: 150px;
+
+    max-width: 150px;
+  }
+
+  .article-sidebar .ad-slot {
+    width: 150px;
+
+    max-width: 150px;
+  }
+
+  .article {
+    padding: 25px;
+  }
+
+  .article-title {
+    font-size: 32px;
+  }
+
 }
 
 
@@ -307,35 +1110,18 @@ body {
    TABLET
    ============================================================ */
 
-@media (max-width: 1050px) {
-
-  .article-layout {
-    grid-template-columns: 150px minmax(0,1fr) 150px;
-  }
-
-}
-
-
-/* ============================================================
-   MOBILE
-   ============================================================ */
-
-@media (max-width: 800px) {
-
-  .header-inner {
-    align-items: flex-start;
-    flex-direction: column;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-
-  .main-nav {
-    gap: 12px;
-  }
+@media (max-width: 900px) {
 
   .article-layout {
     display: block;
-    padding-top: 20px;
+
+    width: 100%;
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    padding: 20px 15px 40px;
   }
 
   .article-sidebar {
@@ -343,29 +1129,177 @@ body {
   }
 
   .article {
-    padding: 24px 20px;
-    border-radius: 10px;
-  }
+    width: 100%;
 
-  .article-title {
-    font-size: 31px;
-  }
+    max-width: 760px;
 
-  .article-content {
-    font-size: 17px;
-  }
+    margin: 0 auto;
 
-  .article-image img {
-    max-height: 380px;
-  }
-
-  .youtube-wrapper {
-    border-radius: 10px;
+    padding: 28px;
   }
 
 }
 
-</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"novo stlugs teste novo","description":"Este é o primeiro artigo de teste do w7noticias. Segundo título Conteúdo utilizado apenas para validar o sistema.","datePublished":"","dateModified":"","mainEntityOfPage":{"@type":"WebPage","@id":"https://w7noticias.com/posts/novo-stlugs-teste-novo.html"},"publisher":{"@type":"Organization","name":"W7Notícias","url":"https://w7noticias.com"},"image":["https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG"],"video":{"@type":"VideoObject","name":"novo stlugs teste novo","description":"Este é o primeiro artigo de teste do w7noticias. Segundo título Conteúdo utilizado apenas para validar o sistema.","embedUrl":"https://www.youtube.com/embed/Xo8F1tlv8ZI?rel=0","contentUrl":"https://youtu.be/Xo8F1tlv8ZI","uploadDate":"","thumbnailUrl":"https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG"}}</script></head><body><header class="site-header"><div class="container header-inner"><a href="/" class="logo" aria-label="W7Notícias - Página inicial"><span class="logo-mark">W7</span><span class="logo-text">w7noticias</span></a><nav class="main-nav" aria-label="Navegação principal"><a href="/">Início</a><a href="/categoria/famosos.html">Famosos</a><a href="/categoria/curiosidades.html">Curiosidades</a><a href="/categoria/saude.html">Saúde</a><a href="/categoria/brasil.html">Brasil</a><a href="/categoria/mundo.html">Mundo</a><a href="/contato.html">Contato</a></nav></div></header><div class="container ad-top-container"><div class="ad-slot" data-ad-id="ANUNCIO_1787335167827" data-ad-position="TOPO" data-ad-order="1"><div class="test-ad-container">
+
+/* ============================================================
+   HEADER TABLET
+   ============================================================ */
+
+@media (max-width: 800px) {
+
+  .header-inner {
+    min-height: auto;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .main-nav {
+    width: 100%;
+
+    justify-content: flex-start;
+
+    gap: 12px;
+  }
+
+  .post-card {
+    display: block;
+  }
+
+  .post-card-image {
+    width: 100%;
+
+    height: auto;
+
+    aspect-ratio: 16 / 9;
+  }
+
+  .post-card-body {
+    padding: 20px;
+  }
+
+}
+
+
+/* ============================================================
+   CELULAR
+   ============================================================ */
+
+@media (max-width: 600px) {
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .home-container {
+    padding: 20px 15px 40px;
+  }
+
+  .home-heading h1 {
+    font-size: 29px;
+  }
+
+  .main-nav {
+    gap: 10px;
+  }
+
+  .main-nav a {
+    font-size: 13px;
+  }
+
+  .post-card-title {
+    font-size: 20px;
+  }
+
+  .article-layout {
+    padding: 15px 10px 30px;
+  }
+
+  .article {
+    padding: 22px 17px;
+
+    border-radius: 10px;
+  }
+
+  .article-title {
+    font-size: 28px;
+
+    line-height: 1.18;
+  }
+
+  .article-content {
+    font-size: 16px;
+
+    line-height: 1.7;
+  }
+
+  .article-content h2 {
+    font-size: 24px;
+  }
+
+  .article-content h3 {
+    font-size: 20px;
+  }
+
+  .article-image img {
+    max-height: none;
+
+    border-radius: 9px;
+  }
+
+  .article-video {
+    margin-top: 30px;
+  }
+
+  .site-footer {
+    padding: 25px 15px;
+  }
+
+}
+
+
+/* ============================================================
+   TELAS MUITO PEQUENAS
+   ============================================================ */
+
+@media (max-width: 380px) {
+
+  .article {
+    padding: 18px 14px;
+  }
+
+  .article-title {
+    font-size: 25px;
+  }
+
+  .article-content {
+    font-size: 15.5px;
+  }
+
+}
+
+
+/* ============================================================
+   ACESSIBILIDADE
+   ============================================================ */
+
+a:focus-visible {
+  outline:
+    3px solid #2563eb;
+
+  outline-offset:
+    3px;
+}
+
+
+/* ============================================================
+   FIM
+   ============================================================ */</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"novo stlugs teste novo","description":"Este é o primeiro artigo de teste do w7noticias. Segundo título Conteúdo utilizado apenas para validar o sistema.","datePublished":"","dateModified":"","mainEntityOfPage":{"@type":"WebPage","@id":"https://w7noticias.com/posts/novo-stlugs-teste-novo.html"},"publisher":{"@type":"Organization","name":"W7Notícias","url":"https://w7noticias.com"},"image":["https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG"],"video":{"@type":"VideoObject","name":"novo stlugs teste novo","description":"Este é o primeiro artigo de teste do w7noticias. Segundo título Conteúdo utilizado apenas para validar o sistema.","embedUrl":"https://www.youtube.com/embed/Xo8F1tlv8ZI?rel=0","contentUrl":"https://youtu.be/Xo8F1tlv8ZI","uploadDate":"","thumbnailUrl":"https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG"}}</script></head><body><header class="site-header"><div class="container header-inner"><a href="/" class="logo" aria-label="W7Notícias - Página inicial"><span class="logo-mark">W7</span><span class="logo-text">w7noticias</span></a><nav class="main-nav" aria-label="Navegação principal"><a href="/">Início</a><a href="/categoria/famosos.html">Famosos</a><a href="/categoria/curiosidades.html">Curiosidades</a><a href="/categoria/saude.html">Saúde</a><a href="/categoria/brasil.html">Brasil</a><a href="/categoria/mundo.html">Mundo</a><a href="/contato.html">Contato</a><a href="/busca.html" class="search-link">Buscar</a></nav></div></header><div class="container ad-top-container"><div class="ad-slot" data-ad-id="ANUNCIO_1787335167827" data-ad-position="TOPO" data-ad-order="1"><div class="test-ad-container">
 
   <span class="test-ad-label">
     ANÚNCIO DE TESTE
@@ -388,14 +1322,14 @@ body {
 
   </a>
 
-</div></div></div><main class="container article-layout"><aside class="article-sidebar article-sidebar-left"><div class="ad-slot" data-ad-id="ANUNCIO_1787566619189" data-ad-position="ESQUERDA" data-ad-order="1"><div class="anuncio-teste-google" style="width: 300px; height: 250px; border: 1px solid #dadce0; background-color: #f8f9fa; display: flex; flex-direction: column; justify-content: space-between; padding: 8px; font-family: Arial, sans-serif; box-sizing: border-box;">
+</div></div></div><main class="article-layout"><aside class="article-sidebar article-sidebar-left" aria-label="Publicidade"><div class="sidebar-sticky"><div class="ad-slot" data-ad-id="ANUNCIO_1787566619189" data-ad-position="ESQUERDA" data-ad-order="1"><div class="anuncio-teste-google" style="width: 300px; height: 250px; border: 1px solid #dadce0; background-color: #f8f9fa; display: flex; flex-direction: column; justify-content: space-between; padding: 8px; font-family: Arial, sans-serif; box-sizing: border-box;">
   <span style="font-size: 10px; color: #70757a; text-transform: uppercase; letter-spacing: 0.5px;">Anúncio</span>
   <div style="text-align: center;">
     <p style="font-size: 14px; color: #1a0dab; margin: 0 0 4px 0; font-weight: bold;">Título do Anúncio de Teste</p>
     <p style="font-size: 12px; color: #4d5156; margin: 0;">Este é um texto de exemplo para simular um banner publicitário na sua página web.</p>
   </div>
   <span style="font-size: 11px; color: #006621; text-align: right;">://siteexemplo.com.br</span>
-</div></div></aside><article class="article"><div class="article-category">Famosos</div><h1 class="article-title">novo stlugs teste novo</h1><div class="article-meta">21/08/2026 00:00</div><figure class="article-image"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="novo stlugs teste novo" loading="eager" decoding="async"></figure><div class="article-content"><p>Este é o primeiro artigo de teste do w7noticias.</p><h2>Segundo título</h2><p>Conteúdo utilizado apenas para validar o sistema.</p><div class="ad-inline-container"><div class="ad-slot" data-ad-id="ANUNCIO_1787487511668" data-ad-position="ENTRE_PARAGRAFOS" data-ad-order="1"><!-- Início do Banner de Anúncio com Imagem -->
+</div></div></div></aside><article class="article"><div class="article-category">Famosos</div><h1 class="article-title">novo stlugs teste novo</h1><div class="article-meta">21/08/2026 00:00</div><figure class="article-image"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="novo stlugs teste novo" loading="eager" decoding="async"></figure><div class="article-content"><p>Este é o primeiro artigo de teste do w7noticias.</p><h2>Segundo título</h2><p>Conteúdo utilizado apenas para validar o sistema.</p><div class="ad-inline-container"><div class="ad-slot" data-ad-id="ANUNCIO_1787487511668" data-ad-position="ENTRE_PARAGRAFOS" data-ad-order="1"><!-- Início do Banner de Anúncio com Imagem -->
 <div class="adsense-image-test" style="margin: 20px auto; text-align: center; max-width: 300px; font-family: Arial, sans-serif; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border: 1px solid #ddd; background: #fff;">
     
     <!-- Tag de identificação pequena (Padrão do Google) -->
@@ -409,14 +1343,14 @@ body {
     </box>
     
 </div>
-<!-- Fim do Banner de Anúncio com Imagem --></div></div></div><section class="article-video" aria-label="Vídeo relacionado"><div class="youtube-wrapper"><iframe src="https://www.youtube.com/embed/Xo8F1tlv8ZI?rel=0" title="novo stlugs teste novo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div></section></article><aside class="article-sidebar article-sidebar-right"><div class="ad-slot" data-ad-id="ANUNCIO_1787566653670" data-ad-position="DIREITA" data-ad-order="1"><div class="anuncio-teste-google" style="width: 300px; height: 250px; border: 1px solid #dadce0; background-color: #f8f9fa; display: flex; flex-direction: column; justify-content: space-between; padding: 8px; font-family: Arial, sans-serif; box-sizing: border-box;">
+<!-- Fim do Banner de Anúncio com Imagem --></div></div></div><section class="article-video" aria-label="Vídeo relacionado"><div class="youtube-wrapper"><iframe src="https://www.youtube.com/embed/Xo8F1tlv8ZI?rel=0" title="novo stlugs teste novo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div></section></article><aside class="article-sidebar article-sidebar-right" aria-label="Publicidade"><div class="sidebar-sticky"><div class="ad-slot" data-ad-id="ANUNCIO_1787566653670" data-ad-position="DIREITA" data-ad-order="1"><div class="anuncio-teste-google" style="width: 300px; height: 250px; border: 1px solid #dadce0; background-color: #f8f9fa; display: flex; flex-direction: column; justify-content: space-between; padding: 8px; font-family: Arial, sans-serif; box-sizing: border-box;">
   <span style="font-size: 10px; color: #70757a; text-transform: uppercase; letter-spacing: 0.5px;">Anúncio</span>
   <div style="text-align: center;">
     <p style="font-size: 14px; color: #1a0dab; margin: 0 0 4px 0; font-weight: bold;">Título do Anúncio de Teste</p>
     <p style="font-size: 12px; color: #4d5156; margin: 0;">Este é um texto de exemplo para simular um banner publicitário na sua página web.</p>
   </div>
   <span style="font-size: 11px; color: #006621; text-align: right;">://siteexemplo.com.br</span>
-</div></div></aside></main><div class="container ad-final-container"><div class="ad-slot" data-ad-id="ANUNCIO_1787566697054" data-ad-position="FINAL" data-ad-order="1"><!-- Início do Bloco de Anúncio de Teste -->
+</div></div></div></aside></main><div class="container ad-final-container"><div class="ad-slot" data-ad-id="ANUNCIO_1787566697054" data-ad-position="FINAL" data-ad-order="1"><!-- Início do Bloco de Anúncio de Teste -->
 <div class="adsense-test-container" style="margin: 20px auto; text-align: center; max-width: 100%;">
     <ins class="adsbygoogle"
          style="display:block; background:#f4f4f4; border:2px dashed #bbb; border-radius:4px; padding:20px; text-align:center; min-height:90px;"
@@ -428,4 +1362,4 @@ body {
          <span style="font-family: sans-serif; font-size: 12px; color: #999; display: block;">Espaço reservado para o banner publicitário responsivo.</span>
     </ins>
 </div>
-<!-- Fim do Bloco de Anúncio de Teste --></div></div><footer class="site-footer"><div class="container footer-inner"><p>&copy; 2026 W7Notícias. Todos os direitos reservados.</p></div></footer></body></html>
+<!-- Fim do Bloco de Anúncio de Teste --></div></div><footer class="site-footer"><div class="container footer-inner"><p>&copy; 2026 W7Notícias. Todos os direitos reservados.</p><p class="footer-links"><a href="/politica-de-privacidade.html">Política de Privacidade</a> · <a href="/contato.html">Contato</a></p></div></footer></body></html>
