@@ -1,4 +1,7 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever..."><meta name="robots" content="index, follow"><link rel="canonical" href="https://w7noticias.com/posts/teste-novo-artigo.html"><link rel="icon" type="image/png" href="https://w7noticias.com/favicon.png"><title>TESTE NOVO ARTIGO DOMINGO | W7Notícias</title><meta property="og:type" content="article"><meta property="og:site_name" content="W7Notícias"><meta property="og:title" content="TESTE NOVO ARTIGO DOMINGO"><meta property="og:description" content="What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever..."><meta property="og:url" content="https://w7noticias.com/posts/teste-novo-artigo.html"><meta property="og:image" content="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="TESTE NOVO ARTIGO DOMINGO"><meta name="twitter:description" content="What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever..."><meta name="twitter:image" content="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG"><style>/* ============================================================
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever..."><meta name="robots" content="index, follow"><link rel="canonical" href="https://w7noticias.com/posts/teste-novo-artigo.html"><link rel="icon" type="image/png" href="https://raw.githubusercontent.com/alexusbsb-ctrl/w7noticias/refs/heads/main/favicon.png"><title>TESTE NOVO ARTIGO DOMINGO | w7noticias</title><meta property="og:type" content="article"><meta property="og:site_name" content="w7noticias"><meta property="og:title" content="TESTE NOVO ARTIGO DOMINGO"><meta property="og:description" content="What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever..."><meta property="og:url" content="https://w7noticias.com/posts/teste-novo-artigo.html"><meta property="og:image" content="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="TESTE NOVO ARTIGO DOMINGO"><meta name="twitter:description" content="What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever..."><meta name="twitter:image" content="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG"><meta charset="UTF-8">
+    <title>Meu Site</title>
+    <!-- Script do Google AdSense -->
+    <script async src="https://googlesyndication.com" crossorigin="anonymous"></script><style>/* ============================================================
    W7NOTICIAS
    STYLE.HTML
    CSS PÚBLICO
@@ -305,6 +308,323 @@ a {
   margin: 8px 0 0;
 
   color: #6b7280;
+}
+
+
+/* ============================================================
+   PÁGINA DE BUSCA
+   ============================================================ */
+
+.search-page {
+  width: 100%;
+
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.search-heading {
+  margin-bottom: 24px;
+}
+
+.search-heading h1 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 36px;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.4px;
+}
+
+.search-heading p {
+  margin: 9px 0 0;
+
+  color: #6b7280;
+
+  font-size: 15px;
+}
+
+
+/* ============================================================
+   CAIXA DE BUSCA
+   ============================================================ */
+
+.search-box {
+  width: 100%;
+
+  margin: 0 0 30px;
+
+  padding: 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 4px 18px rgba(0, 0, 0, 0.04);
+}
+
+.search-label {
+  display: block;
+
+  margin: 0 0 9px;
+
+  color: #111827;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+/* ============================================================
+   LINHA DO FORMULÁRIO
+   ============================================================ */
+
+.search-form-row {
+  position: relative;
+
+  display: flex;
+
+  align-items: stretch;
+
+  width: 100%;
+
+  gap: 10px;
+}
+
+
+/* ============================================================
+   ÍCONE DE LUPA
+   ============================================================
+
+   A lupa é criada somente com CSS.
+
+   Não depende de:
+   - Font Awesome
+   - Bootstrap Icons
+   - biblioteca externa
+   - imagem externa
+
+   ============================================================ */
+
+.search-form-row::before {
+  content: "";
+
+  position: absolute;
+
+  z-index: 2;
+
+  left: 17px;
+  top: 50%;
+
+  width: 15px;
+  height: 15px;
+
+  border: 2px solid #6b7280;
+
+  border-radius: 50%;
+
+  transform: translateY(-55%);
+
+  pointer-events: none;
+}
+
+.search-form-row::after {
+  content: "";
+
+  position: absolute;
+
+  z-index: 2;
+
+  left: 31px;
+  top: calc(50% + 7px);
+
+  width: 8px;
+  height: 2px;
+
+  background: #6b7280;
+
+  border-radius: 2px;
+
+  transform:
+    rotate(45deg);
+
+  transform-origin: left center;
+
+  pointer-events: none;
+}
+
+
+/* ============================================================
+   INPUT DA BUSCA
+   ============================================================ */
+
+.search-form-row input[type="search"] {
+  flex: 1;
+
+  width: 100%;
+
+  min-width: 0;
+
+  height: 50px;
+
+  padding:
+    0
+    18px
+    0
+    48px;
+
+  border:
+    1px solid #d1d5db;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.search-form-row input[type="search"]::placeholder {
+  color: #9ca3af;
+
+  opacity: 1;
+}
+
+.search-form-row input[type="search"]:hover {
+  border-color: #b8c0cc;
+}
+
+.search-form-row input[type="search"]:focus {
+  border-color: #2563eb;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* ============================================================
+   BOTÃO BUSCAR
+   ============================================================ */
+
+.search-form-row button {
+  flex: 0 0 auto;
+
+  min-width: 105px;
+
+  height: 50px;
+
+  padding:
+    0
+    22px;
+
+  border: 0;
+
+  border-radius: 10px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
+}
+
+.search-form-row button:hover {
+  background: #1d4ed8;
+
+  box-shadow:
+    0 4px 12px rgba(37, 99, 235, 0.20);
+}
+
+.search-form-row button:active {
+  transform: translateY(1px);
+}
+
+.search-form-row button:focus-visible {
+  outline:
+    3px solid rgba(37, 99, 235, 0.25);
+
+  outline-offset: 2px;
+}
+
+
+/* ============================================================
+   RESULTADOS DA BUSCA
+   ============================================================ */
+
+.search-results-section {
+  width: 100%;
+}
+
+.search-results {
+  width: 100%;
+}
+
+.search-results-header {
+  margin: 0 0 16px;
+
+  color: #4b5563;
+
+  font-size: 14px;
+}
+
+.search-results-header strong {
+  color: #111827;
+}
+
+.search-posts-list {
+  gap: 18px;
+}
+
+.search-post-card {
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.search-post-card:hover {
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.07);
+
+  transform: translateY(-1px);
+}
+
+.search-result-summary {
+  margin: 10px 0 0;
+
+  color: #5f6368;
+
+  font-size: 14px;
+
+  line-height: 1.55;
 }
 
 
@@ -1182,6 +1502,23 @@ a {
     padding: 20px;
   }
 
+
+  /* ==========================================================
+     BUSCA TABLET
+     ========================================================== */
+
+  .search-page {
+    padding-top: 25px;
+  }
+
+  .search-heading h1 {
+    font-size: 32px;
+  }
+
+  .search-box {
+    padding: 20px;
+  }
+
 }
 
 
@@ -1260,6 +1597,69 @@ a {
     padding: 25px 15px;
   }
 
+
+  /* ==========================================================
+     BUSCA CELULAR
+     ========================================================== */
+
+  .search-page {
+    padding-top: 20px;
+
+    padding-bottom: 40px;
+  }
+
+  .search-heading {
+    margin-bottom: 20px;
+  }
+
+  .search-heading h1 {
+    font-size: 29px;
+  }
+
+  .search-heading p {
+    font-size: 14px;
+  }
+
+  .search-box {
+    padding: 17px;
+
+    border-radius: 12px;
+  }
+
+  .search-form-row {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .search-form-row input[type="search"] {
+    height: 48px;
+
+    padding-left: 46px;
+
+    font-size: 15px;
+  }
+
+  .search-form-row button {
+    width: 100%;
+
+    height: 48px;
+  }
+
+  .search-form-row::before {
+    left: 16px;
+  }
+
+  .search-form-row::after {
+    left: 30px;
+  }
+
+  .search-result-summary {
+    font-size: 14px;
+  }
+
 }
 
 
@@ -1281,6 +1681,23 @@ a {
     font-size: 15.5px;
   }
 
+
+  /* ==========================================================
+     BUSCA MUITO PEQUENA
+     ========================================================== */
+
+  .search-box {
+    padding: 14px;
+  }
+
+  .search-heading h1 {
+    font-size: 26px;
+  }
+
+  .search-form-row input[type="search"] {
+    font-size: 14px;
+  }
+
 }
 
 
@@ -1299,7 +1716,7 @@ a:focus-visible {
 
 /* ============================================================
    FIM
-   ============================================================ */</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"TESTE NOVO ARTIGO DOMINGO","description":"What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever...","datePublished":"","dateModified":"","mainEntityOfPage":{"@type":"WebPage","@id":"https://w7noticias.com/posts/teste-novo-artigo.html"},"publisher":{"@type":"Organization","name":"W7Notícias","url":"https://w7noticias.com"},"image":["https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG"],"video":{"@type":"VideoObject","name":"TESTE NOVO ARTIGO DOMINGO","description":"What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever...","embedUrl":"https://www.youtube.com/embed/uXlWYZ022zU?rel=0","contentUrl":"https://youtu.be/uXlWYZ022zU","uploadDate":"","thumbnailUrl":"https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG"}}</script></head><body><header class="site-header"><div class="container header-inner"><a href="/" class="logo" aria-label="W7Notícias - Página inicial"><span class="logo-mark">W7</span><span class="logo-text">w7noticias</span></a><nav class="main-nav" aria-label="Navegação principal"><a href="/">Início</a><a href="/categoria/famosos.html">Famosos</a><a href="/categoria/curiosidades.html">Curiosidades</a><a href="/categoria/saude.html">Saúde</a><a href="/categoria/brasil.html">Brasil</a><a href="/categoria/mundo.html">Mundo</a><a href="/contato.html">Contato</a><a href="/busca.html" class="search-link">Buscar</a></nav></div></header><div class="container ad-top-container"><div class="ad-slot" data-ad-id="ANUNCIO_1787335167827" data-ad-position="TOPO" data-ad-order="1"><div class="test-ad-container">
+   ============================================================ */</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"TESTE NOVO ARTIGO DOMINGO","description":"What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever...","datePublished":"","dateModified":"","author":{"@type":"Person","name":"w7noticias"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://w7noticias.com/posts/teste-novo-artigo.html"},"publisher":{"@type":"Organization","name":"w7noticias","url":"https://w7noticias.com"},"image":["https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG"],"video":{"@type":"VideoObject","name":"TESTE NOVO ARTIGO DOMINGO","description":"What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever...","embedUrl":"https://www.youtube.com/embed/uXlWYZ022zU?rel=0","contentUrl":"https://youtu.be/uXlWYZ022zU","uploadDate":"","thumbnailUrl":"https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG"}}</script></head><body><header class="site-header"><div class="container header-inner"><a href="https://w7noticias.com" class="logo" aria-label="w7noticias - Página inicial"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/w7noticias/refs/heads/main/logo.ico" class="logo-image" alt="w7noticias" decoding="async"></a><nav class="main-nav" aria-label="Navegação principal"><a href="https://w7noticias.com">Início</a><a href="/categoria/famosos.html" target="_self">Famosos</a><a href="/categoria/curiosidades.html" target="_self">Curiosidades</a><a href="/categoria/saude.html" target="_self">Saúde</a><a href="/categoria/brasil.html" target="_self">Brasil</a><a href="/categoria/mundo.html" target="_self">Mundo</a><a href="/contato.html" target="_self">Contato</a><a href="/busca.html" target="_self">Busca</a></nav></div></header><div class="container ad-top-container"><div class="ad-slot" data-ad-id="ANUNCIO_1787335167827" data-ad-position="TOPO" data-ad-order="1"><div class="test-ad-container">
 
   <span class="test-ad-label">
     ANÚNCIO DE TESTE
@@ -1362,4 +1779,4 @@ a:focus-visible {
          <span style="font-family: sans-serif; font-size: 12px; color: #999; display: block;">Espaço reservado para o banner publicitário responsivo.</span>
     </ins>
 </div>
-<!-- Fim do Bloco de Anúncio de Teste --></div></div><footer class="site-footer"><div class="container footer-inner"><p>&copy; 2026 W7Notícias. Todos os direitos reservados.</p><p class="footer-links"><a href="/politica-de-privacidade.html">Política de Privacidade</a> · <a href="/contato.html">Contato</a></p></div></footer></body></html>
+<!-- Fim do Bloco de Anúncio de Teste --></div></div><footer class="site-footer"><div class="container footer-inner"><p>&copy; 2026 w7noticias. Todos os direitos reservados.</p><p class="footer-links"><a href="https://w7noticias.com/politica-de-privacidade.html">Política de Privacidade</a> · <a href="https://w7noticias.com/contato.html">Contato</a></p></div></footer></body></html>
