@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="W7Notícias — notícias de Curiosidades."><meta name="robots" content="index, follow"><link rel="canonical" href="https://w7noticias.com/categoria/curiosidades.html"><link rel="icon" type="image/png" href="https://w7noticias.com/favicon.png"><title>Curiosidades | W7Notícias</title><meta property="og:type" content="website"><meta property="og:site_name" content="W7Notícias"><meta property="og:title" content="Curiosidades | W7Notícias"><meta property="og:description" content="Notícias de Curiosidades no W7Notícias."><meta property="og:url" content="https://w7noticias.com/categoria/curiosidades.html"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Curiosidades | W7Notícias"><meta name="twitter:description" content="Notícias de Curiosidades no W7Notícias."><style>/* ============================================================
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="W7Notícias — notícias de Curiosidades."><meta name="robots" content="index, follow"><link rel="canonical" href="/categoria/curiosidades.html"><link rel="icon" type="image/png" href="https://raw.githubusercontent.com/alexusbsb-ctrl/w7noticias/refs/heads/main/favicon.png"><title>Curiosidades | W7Notícias</title><meta property="og:type" content="website"><meta property="og:site_name" content="W7Notícias"><meta property="og:title" content="Curiosidades | W7Notícias"><meta property="og:description" content="Notícias de Curiosidades no W7Notícias."><meta property="og:url" content="/categoria/curiosidades.html"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Curiosidades | W7Notícias"><meta name="twitter:description" content="Notícias de Curiosidades no W7Notícias."><style>/* ============================================================
    W7NOTICIAS
    STYLE.HTML
    CSS PÚBLICO
@@ -305,6 +305,323 @@ a {
   margin: 8px 0 0;
 
   color: #6b7280;
+}
+
+
+/* ============================================================
+   PÁGINA DE BUSCA
+   ============================================================ */
+
+.search-page {
+  width: 100%;
+
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.search-heading {
+  margin-bottom: 24px;
+}
+
+.search-heading h1 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 36px;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.4px;
+}
+
+.search-heading p {
+  margin: 9px 0 0;
+
+  color: #6b7280;
+
+  font-size: 15px;
+}
+
+
+/* ============================================================
+   CAIXA DE BUSCA
+   ============================================================ */
+
+.search-box {
+  width: 100%;
+
+  margin: 0 0 30px;
+
+  padding: 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 4px 18px rgba(0, 0, 0, 0.04);
+}
+
+.search-label {
+  display: block;
+
+  margin: 0 0 9px;
+
+  color: #111827;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+/* ============================================================
+   LINHA DO FORMULÁRIO
+   ============================================================ */
+
+.search-form-row {
+  position: relative;
+
+  display: flex;
+
+  align-items: stretch;
+
+  width: 100%;
+
+  gap: 10px;
+}
+
+
+/* ============================================================
+   ÍCONE DE LUPA
+   ============================================================
+
+   A lupa é criada somente com CSS.
+
+   Não depende de:
+   - Font Awesome
+   - Bootstrap Icons
+   - biblioteca externa
+   - imagem externa
+
+   ============================================================ */
+
+.search-form-row::before {
+  content: "";
+
+  position: absolute;
+
+  z-index: 2;
+
+  left: 17px;
+  top: 50%;
+
+  width: 15px;
+  height: 15px;
+
+  border: 2px solid #6b7280;
+
+  border-radius: 50%;
+
+  transform: translateY(-55%);
+
+  pointer-events: none;
+}
+
+.search-form-row::after {
+  content: "";
+
+  position: absolute;
+
+  z-index: 2;
+
+  left: 31px;
+  top: calc(50% + 7px);
+
+  width: 8px;
+  height: 2px;
+
+  background: #6b7280;
+
+  border-radius: 2px;
+
+  transform:
+    rotate(45deg);
+
+  transform-origin: left center;
+
+  pointer-events: none;
+}
+
+
+/* ============================================================
+   INPUT DA BUSCA
+   ============================================================ */
+
+.search-form-row input[type="search"] {
+  flex: 1;
+
+  width: 100%;
+
+  min-width: 0;
+
+  height: 50px;
+
+  padding:
+    0
+    18px
+    0
+    48px;
+
+  border:
+    1px solid #d1d5db;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.search-form-row input[type="search"]::placeholder {
+  color: #9ca3af;
+
+  opacity: 1;
+}
+
+.search-form-row input[type="search"]:hover {
+  border-color: #b8c0cc;
+}
+
+.search-form-row input[type="search"]:focus {
+  border-color: #2563eb;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* ============================================================
+   BOTÃO BUSCAR
+   ============================================================ */
+
+.search-form-row button {
+  flex: 0 0 auto;
+
+  min-width: 105px;
+
+  height: 50px;
+
+  padding:
+    0
+    22px;
+
+  border: 0;
+
+  border-radius: 10px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
+}
+
+.search-form-row button:hover {
+  background: #1d4ed8;
+
+  box-shadow:
+    0 4px 12px rgba(37, 99, 235, 0.20);
+}
+
+.search-form-row button:active {
+  transform: translateY(1px);
+}
+
+.search-form-row button:focus-visible {
+  outline:
+    3px solid rgba(37, 99, 235, 0.25);
+
+  outline-offset: 2px;
+}
+
+
+/* ============================================================
+   RESULTADOS DA BUSCA
+   ============================================================ */
+
+.search-results-section {
+  width: 100%;
+}
+
+.search-results {
+  width: 100%;
+}
+
+.search-results-header {
+  margin: 0 0 16px;
+
+  color: #4b5563;
+
+  font-size: 14px;
+}
+
+.search-results-header strong {
+  color: #111827;
+}
+
+.search-posts-list {
+  gap: 18px;
+}
+
+.search-post-card {
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.search-post-card:hover {
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.07);
+
+  transform: translateY(-1px);
+}
+
+.search-result-summary {
+  margin: 10px 0 0;
+
+  color: #5f6368;
+
+  font-size: 14px;
+
+  line-height: 1.55;
 }
 
 
@@ -1182,6 +1499,23 @@ a {
     padding: 20px;
   }
 
+
+  /* ==========================================================
+     BUSCA TABLET
+     ========================================================== */
+
+  .search-page {
+    padding-top: 25px;
+  }
+
+  .search-heading h1 {
+    font-size: 32px;
+  }
+
+  .search-box {
+    padding: 20px;
+  }
+
 }
 
 
@@ -1260,6 +1594,69 @@ a {
     padding: 25px 15px;
   }
 
+
+  /* ==========================================================
+     BUSCA CELULAR
+     ========================================================== */
+
+  .search-page {
+    padding-top: 20px;
+
+    padding-bottom: 40px;
+  }
+
+  .search-heading {
+    margin-bottom: 20px;
+  }
+
+  .search-heading h1 {
+    font-size: 29px;
+  }
+
+  .search-heading p {
+    font-size: 14px;
+  }
+
+  .search-box {
+    padding: 17px;
+
+    border-radius: 12px;
+  }
+
+  .search-form-row {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .search-form-row input[type="search"] {
+    height: 48px;
+
+    padding-left: 46px;
+
+    font-size: 15px;
+  }
+
+  .search-form-row button {
+    width: 100%;
+
+    height: 48px;
+  }
+
+  .search-form-row::before {
+    left: 16px;
+  }
+
+  .search-form-row::after {
+    left: 30px;
+  }
+
+  .search-result-summary {
+    font-size: 14px;
+  }
+
 }
 
 
@@ -1281,6 +1678,23 @@ a {
     font-size: 15.5px;
   }
 
+
+  /* ==========================================================
+     BUSCA MUITO PEQUENA
+     ========================================================== */
+
+  .search-box {
+    padding: 14px;
+  }
+
+  .search-heading h1 {
+    font-size: 26px;
+  }
+
+  .search-form-row input[type="search"] {
+    font-size: 14px;
+  }
+
 }
 
 
@@ -1299,7 +1713,7 @@ a:focus-visible {
 
 /* ============================================================
    FIM
-   ============================================================ */</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Curiosidades | W7Notícias","url":"https://w7noticias.com/categoria/curiosidades.html","isPartOf":{"@type":"WebSite","name":"W7Notícias","url":"https://w7noticias.com"}}</script></head><body><header class="site-header"><div class="container header-inner"><a href="/" class="logo" aria-label="W7Notícias - Página inicial"><span class="logo-mark">W7</span><span class="logo-text">w7noticias</span></a><nav class="main-nav" aria-label="Navegação principal"><a href="/">Início</a><a href="/categoria/famosos.html">Famosos</a><a href="/categoria/curiosidades.html">Curiosidades</a><a href="/categoria/saude.html">Saúde</a><a href="/categoria/brasil.html">Brasil</a><a href="/categoria/mundo.html">Mundo</a><a href="/contato.html">Contato</a><a href="/busca.html" class="search-link">Buscar</a></nav></div></header><div class="container ad-top-container"><div class="ad-slot" data-ad-id="ANUNCIO_1787335167827" data-ad-position="TOPO" data-ad-order="1"><div class="test-ad-container">
+   ============================================================ */</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Curiosidades | W7Notícias","url":"/categoria/curiosidades.html","isPartOf":{"@type":"WebSite","name":"W7Notícias","url":""}}</script></head><body><header class="site-header"><div class="container header-inner"><a href="https://w7noticias.com" class="logo" aria-label="w7noticias - Página inicial"><span class="logo-mark">W7</span><span class="logo-text">w7noticias</span></a><nav class="main-nav" aria-label="Navegação principal"><a href="https://w7noticias.com">Início</a></nav></div></header><div class="container ad-top-container"><div class="ad-slot" data-ad-id="ANUNCIO_1787335167827" data-ad-position="TOPO" data-ad-order="1"><div class="test-ad-container">
 
   <span class="test-ad-label">
     ANÚNCIO DE TESTE
@@ -1329,7 +1743,7 @@ a:focus-visible {
     <p style="font-size: 12px; color: #4d5156; margin: 0;">Este é um texto de exemplo para simular um banner publicitário na sua página web.</p>
   </div>
   <span style="font-size: 11px; color: #006621; text-align: right;">://siteexemplo.com.br</span>
-</div></div></div></aside><section class="home-main-column"><section class="home-heading"><h1>Curiosidades</h1><p>Notícias de Curiosidades.</p></section><section class="posts-list" aria-label="Notícias de Curiosidades"><article class="post-card"><a href="https://w7noticias.com/posts/teste-novo-artigo.html" class="post-card-image" aria-label="TESTE NOVO ARTIGO DOMINGO"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="TESTE NOVO ARTIGO DOMINGO" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Curiosidades</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/teste-novo-artigo.html">TESTE NOVO ARTIGO DOMINGO</a></h2><div class="post-card-date">22/08/2026 00:00</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/terceiro-artigo-de-teste-salvar.html" class="post-card-image" aria-label="Terceiro artigo de teste SALVAR"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="Terceiro artigo de teste SALVAR" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category">Curiosidades</div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/terceiro-artigo-de-teste-salvar.html">Terceiro artigo de teste SALVAR</a></h2><div class="post-card-date">21/08/2026 00:00</div></div></article><div class="ad-inline-container home-ad-between-posts"><div class="ad-slot" data-ad-id="ANUNCIO_1787487511668" data-ad-position="ENTRE_PARAGRAFOS" data-ad-order="1"><!-- Início do Banner de Anúncio com Imagem -->
+</div></div></div></aside><section class="home-main-column"><section class="home-heading"><h1>Curiosidades</h1><p>Notícias de Curiosidades.</p></section><section class="posts-list" aria-label="Notícias de Curiosidades"><article class="post-card"><a href="https://w7noticias.com/posts/teste-novo-artigo.html" class="post-card-image" aria-label="TESTE NOVO ARTIGO DOMINGO"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="TESTE NOVO ARTIGO DOMINGO" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category"><a href="https://w7noticias.com/categoria/curiosidades.html" aria-label="Ver notícias da categoria Curiosidades">Curiosidades</a></div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/teste-novo-artigo.html">TESTE NOVO ARTIGO DOMINGO</a></h2><div class="post-card-date">22/08/2026 00:00</div></div></article><article class="post-card"><a href="https://w7noticias.com/posts/terceiro-artigo-de-teste-salvar.html" class="post-card-image" aria-label="Terceiro artigo de teste SALVAR"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/img/refs/heads/main/007.PNG" alt="Terceiro artigo de teste SALVAR" loading="lazy" decoding="async"></a><div class="post-card-body"><div class="post-card-category"><a href="https://w7noticias.com/categoria/curiosidades.html" aria-label="Ver notícias da categoria Curiosidades">Curiosidades</a></div><h2 class="post-card-title"><a href="https://w7noticias.com/posts/terceiro-artigo-de-teste-salvar.html">Terceiro artigo de teste SALVAR</a></h2><div class="post-card-date">21/08/2026 00:00</div></div></article><div class="ad-inline-container home-ad-between-posts"><div class="ad-slot" data-ad-id="ANUNCIO_1787487511668" data-ad-position="ENTRE_PARAGRAFOS" data-ad-order="1"><!-- Início do Banner de Anúncio com Imagem -->
 <div class="adsense-image-test" style="margin: 20px auto; text-align: center; max-width: 300px; font-family: Arial, sans-serif; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border: 1px solid #ddd; background: #fff;">
     
     <!-- Tag de identificação pequena (Padrão do Google) -->
@@ -1362,4 +1776,4 @@ a:focus-visible {
          <span style="font-family: sans-serif; font-size: 12px; color: #999; display: block;">Espaço reservado para o banner publicitário responsivo.</span>
     </ins>
 </div>
-<!-- Fim do Bloco de Anúncio de Teste --></div></div><footer class="site-footer"><div class="container footer-inner"><p>&copy; 2026 W7Notícias. Todos os direitos reservados.</p><p class="footer-links"><a href="/politica-de-privacidade.html">Política de Privacidade</a> · <a href="/contato.html">Contato</a></p></div></footer></body></html>
+<!-- Fim do Bloco de Anúncio de Teste --></div></div><footer class="site-footer"><div class="container footer-inner"><p>&copy; 2026 w7noticias. Todos os direitos reservados.</p><p class="footer-links"><a href="https://w7noticias.com/politica-de-privacidade.html">Política de Privacidade</a> · <a href="https://w7noticias.com/contato.html">Contato</a></p></div></footer></body></html>
