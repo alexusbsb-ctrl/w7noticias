@@ -1,1195 +1,1719 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Política de Privacidade e uso de cookies do w7noticias."><meta name="robots" content="index, follow"><link rel="canonical" href="https://w7noticias.com/politica-de-privacidade.html"><link rel="icon" type="image/png" href="https://raw.githubusercontent.com/alexusbsb-ctrl/w7noticias/refs/heads/main/favicon.png"><title>Política de Privacidade | w7noticias</title><meta property="og:type" content="website"><meta property="og:site_name" content="w7noticias"><meta property="og:title" content="Política de Privacidade | w7noticias"><meta property="og:description" content="Política de Privacidade e uso de cookies do w7noticias."><meta property="og:url" content="https://w7noticias.com/politica-de-privacidade.html"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Política de Privacidade | w7noticias"><meta name="twitter:description" content="Política de Privacidade e uso de cookies do w7noticias."><meta charset="UTF-8">
+    <title>Meu Site</title>
+    <!-- Script do Google AdSense -->
+    <script async src="https://googlesyndication.com" crossorigin="anonymous"></script><style>/* ============================================================
+   W7NOTICIAS
+   STYLE.HTML
+   CSS PÚBLICO
+   ============================================================ */
 
-<head>
 
-  <meta charset="UTF-8">
+/* ============================================================
+   RESET
+   ============================================================ */
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+* {
+  box-sizing: border-box;
+}
 
-  <meta
-    name="description"
-    content="Política de Privacidade do W7Notícias."
-  >
+html {
+  margin: 0;
+  padding: 0;
 
-  <meta
-    name="robots"
-    content="index, follow"
-  >
+  scroll-behavior: smooth;
+}
 
-  <link
-    rel="canonical"
-    href="https://w7noticias.com/politica-de-privacidade.html"
-  >
+body {
+  margin: 0;
+  padding: 0;
 
-  <link
-    rel="icon"
-    type="image/png"
-    href="https://w7noticias.com/favicon.png"
-  >
+  background: #f5f7fa;
+  color: #202124;
 
-  <title>
-    Política de Privacidade | W7Notícias
-  </title>
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
 
+  overflow-x: hidden;
+}
 
-  <!-- ========================================================
-       OPEN GRAPH
-       ======================================================== -->
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-  <meta
-    property="og:type"
-    content="website"
-  >
+a {
+  color: inherit;
+}
 
-  <meta
-    property="og:site_name"
-    content="W7Notícias"
-  >
 
-  <meta
-    property="og:title"
-    content="Política de Privacidade | W7Notícias"
-  >
+/* ============================================================
+   CONTAINER
+   ============================================================ */
 
-  <meta
-    property="og:description"
-    content="Política de Privacidade do W7Notícias."
-  >
+.container {
+  width: 100%;
+  max-width: 1200px;
 
-  <meta
-    property="og:url"
-    content="https://w7noticias.com/politica-de-privacidade.html"
-  >
+  margin: 0 auto;
 
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-  <!-- ========================================================
-       TWITTER
-       ======================================================== -->
 
-  <meta
-    name="twitter:card"
-    content="summary_large_image"
-  >
+/* ============================================================
+   HEADER
+   ============================================================ */
 
-  <meta
-    name="twitter:title"
-    content="Política de Privacidade | W7Notícias"
-  >
+.site-header {
+  width: 100%;
 
-  <meta
-    name="twitter:description"
-    content="Política de Privacidade do W7Notícias."
-  >
+  background: #ffffff;
 
+  border-bottom: 1px solid #e5e7eb;
 
-  <!-- ========================================================
-       ESTILO
-       ======================================================== -->
+  position: relative;
 
-  <style>
+  z-index: 100;
+}
 
-    * {
-      box-sizing: border-box;
-    }
+.header-inner {
+  min-height: 72px;
 
+  display: flex;
 
-    html {
-      scroll-behavior: smooth;
-    }
+  align-items: center;
+  justify-content: space-between;
 
+  gap: 25px;
+}
 
-    body {
 
-      margin: 0;
+/* ============================================================
+   LOGO
+   ============================================================ */
 
-      padding: 0;
+.logo {
+  display: inline-flex;
 
-      background: #ffffff;
+  align-items: center;
 
-      color: #000000;
+  gap: 10px;
 
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
+  text-decoration: none;
 
-      line-height: 1.7;
+  color: #2563eb;
 
-    }
+  font-weight: 700;
 
+  flex-shrink: 0;
+}
 
-    a {
+.logo-mark {
+  width: 42px;
+  height: 42px;
 
-      color: #000000;
+  display: inline-flex;
 
-      text-decoration: none;
+  align-items: center;
+  justify-content: center;
 
-    }
+  border-radius: 10px;
 
+  background: #2563eb;
+  color: #ffffff;
 
-    a:hover {
+  font-size: 15px;
+  font-weight: 800;
+}
 
-      text-decoration: underline;
+.logo-text {
+  color: #2563eb;
 
-    }
+  font-size: 20px;
+  font-weight: 800;
+}
 
 
-    /* ======================================================
-       CONTAINER
-       ====================================================== */
+/* ============================================================
+   MENU
+   ============================================================ */
 
-    .container {
+.main-nav {
+  display: flex;
 
-      width: min(
-        1180px,
-        calc(100% - 32px)
-      );
+  align-items: center;
+  justify-content: flex-end;
 
-      margin: 0 auto;
+  gap: 18px;
 
-    }
+  flex-wrap: wrap;
+}
 
+.main-nav a {
+  color: #4b5563;
 
-    /* ======================================================
-       HEADER
-       ====================================================== */
+  text-decoration: none;
 
-    .site-header {
+  font-size: 14px;
+  font-weight: 600;
 
-      background: #ffffff;
+  transition: color 0.2s ease;
+}
 
-      border-bottom:
-        1px solid #e5e5e5;
+.main-nav a:hover {
+  color: #2563eb;
+}
 
-    }
+.search-link {
+  color: #2563eb !important;
+}
 
 
-    .header-inner {
+/* ============================================================
+   ANÚNCIO TOPO
+   ============================================================ */
 
-      min-height: 76px;
+.ad-top-container {
+  width: 100%;
+  max-width: 1200px;
 
-      display: flex;
+  margin: 0 auto;
 
-      align-items: center;
+  padding: 15px 20px 20px;
+}
 
-      justify-content: space-between;
+.ad-top-container .ad-slot {
+  width: 100%;
 
-      gap: 30px;
+  margin: 0 auto 20px;
 
-    }
+  text-align: center;
+}
 
 
-    /* ======================================================
-       LOGO
-       ====================================================== */
+/* ============================================================
+   ANÚNCIO FINAL
+   ============================================================ */
 
-    .logo {
+.ad-final-container {
+  width: 100%;
+  max-width: 1200px;
 
-      display: inline-flex;
+  margin: 0 auto;
 
-      align-items: center;
+  padding: 20px 20px 35px;
+}
 
-      gap: 10px;
+.ad-final-container .ad-slot {
+  width: 100%;
 
-      white-space: nowrap;
+  margin: 0 auto 20px;
 
-      text-decoration: none;
+  text-align: center;
+}
 
-    }
 
+/* ============================================================
+   ANÚNCIO GENÉRICO
+   ============================================================ */
 
-    .logo:hover {
+.ad-slot {
+  display: block;
 
-      text-decoration: none;
+  width: 100%;
+  max-width: 100%;
 
-    }
+  margin: 0 auto 25px;
 
+  text-align: center;
 
-    .logo-mark {
+  min-width: 0;
 
-      width: 42px;
+  overflow: visible;
+}
 
-      height: 42px;
+.ad-slot iframe {
+  display: block;
 
-      display: inline-flex;
+  max-width: 100%;
 
-      align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-      justify-content: center;
+.ad-slot img {
+  display: block;
 
-      border-radius: 10px;
+  max-width: 100%;
 
-      background: #2563eb;
+  height: auto;
 
-      color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-      font-size: 15px;
 
-      font-weight: 800;
+/* ============================================================
+   ANÚNCIOS ENTRE PARÁGRAFOS
+   ============================================================ */
 
-      letter-spacing: 0;
+.ad-inline-container {
+  width: 100%;
+  max-width: 100%;
 
-    }
+  margin: 30px 0;
 
+  text-align: center;
 
-    .logo-text {
+  overflow: hidden;
+}
 
-      color: #2563eb;
+.ad-inline-container .ad-slot {
+  width: 100%;
+  max-width: 100%;
 
-      font-size: 20px;
+  margin: 0 auto;
+}
 
-      font-weight: 800;
 
-      letter-spacing: 0;
+/* ============================================================
+   HOME
+   ============================================================ */
 
-    }
+.home-container {
+  width: 100%;
+  max-width: 1200px;
 
+  margin: 0 auto;
 
-    /* ======================================================
-       MENU
-       ====================================================== */
+  padding: 20px 20px 50px;
+}
 
-    .main-nav {
+.home-heading {
+  margin: 0 0 30px;
+}
 
-      display: flex;
+.home-heading h1 {
+  margin: 0;
 
-      align-items: center;
+  color: #111827;
 
-      gap: 20px;
+  font-size: 36px;
 
-      flex-wrap: wrap;
+  line-height: 1.2;
+}
 
-    }
+.home-heading p {
+  margin: 8px 0 0;
 
+  color: #6b7280;
+}
 
-    .main-nav a {
 
-      color: #000000;
+/* ============================================================
+   PÁGINA DE BUSCA
+   ============================================================ */
 
-      font-size: 14px;
+.search-page {
+  width: 100%;
 
-      font-weight: 600;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
 
-      text-decoration: none;
+.search-heading {
+  margin-bottom: 24px;
+}
 
-      transition:
-        opacity 0.2s ease;
+.search-heading h1 {
+  margin: 0;
 
-    }
+  color: #111827;
 
+  font-size: 36px;
 
-    .main-nav a:hover {
+  line-height: 1.2;
 
-      opacity: 0.65;
+  letter-spacing: -0.4px;
+}
 
-      text-decoration: none;
+.search-heading p {
+  margin: 9px 0 0;
 
-    }
+  color: #6b7280;
 
+  font-size: 15px;
+}
 
-    .search-link {
 
-      font-weight: 700 !important;
+/* ============================================================
+   CAIXA DE BUSCA
+   ============================================================ */
 
-    }
+.search-box {
+  width: 100%;
 
+  margin: 0 0 30px;
 
-    /* ======================================================
-       CONTEÚDO
-       ====================================================== */
+  padding: 22px;
 
-    .privacy-page {
+  background: #ffffff;
 
-      padding:
-        55px
-        0
-        70px;
+  border: 1px solid #e5e7eb;
 
-    }
+  border-radius: 14px;
 
+  box-shadow:
+    0 4px 18px rgba(0, 0, 0, 0.04);
+}
 
-    .privacy-container {
+.search-label {
+  display: block;
 
-      width: min(
-        900px,
-        calc(100% - 32px)
-      );
+  margin: 0 0 9px;
 
-      margin: 0 auto;
+  color: #111827;
 
-    }
+  font-size: 14px;
 
+  font-weight: 700;
+}
 
-    /* ======================================================
-       TÍTULO
-       ====================================================== */
 
-    .privacy-title {
+/* ============================================================
+   LINHA DO FORMULÁRIO
+   ============================================================ */
 
-      margin:
-        0
-        0
-        35px;
+.search-form-row {
+  position: relative;
 
-      color: #000000;
+  display: flex;
 
-      font-size: clamp(
-        32px,
-        5vw,
-        46px
-      );
+  align-items: stretch;
 
-      line-height: 1.15;
+  width: 100%;
 
-      font-weight: 800;
+  gap: 10px;
+}
 
-      letter-spacing: -1px;
 
-    }
+/* ============================================================
+   ÍCONE DE LUPA
+   ============================================================
 
+   A lupa é criada somente com CSS.
 
-    /* ======================================================
-       SEÇÕES
-       ====================================================== */
+   Não depende de:
+   - Font Awesome
+   - Bootstrap Icons
+   - biblioteca externa
+   - imagem externa
 
-    .privacy-section {
+   ============================================================ */
 
-      margin-bottom: 34px;
+.search-form-row::before {
+  content: "";
 
-    }
+  position: absolute;
 
+  z-index: 2;
 
-    .privacy-section h2 {
+  left: 17px;
+  top: 50%;
 
-      margin:
-        0
-        0
-        12px;
+  width: 15px;
+  height: 15px;
 
-      color: #000000;
+  border: 2px solid #6b7280;
 
-      font-size: 24px;
+  border-radius: 50%;
 
-      line-height: 1.3;
+  transform: translateY(-55%);
 
-      font-weight: 800;
+  pointer-events: none;
+}
 
-    }
+.search-form-row::after {
+  content: "";
 
+  position: absolute;
 
-    .privacy-section p {
+  z-index: 2;
 
-      margin:
-        0
-        0
-        16px;
+  left: 31px;
+  top: calc(50% + 7px);
 
-      color: #000000;
+  width: 8px;
+  height: 2px;
 
-      font-size: 17px;
+  background: #6b7280;
 
-      line-height: 1.75;
+  border-radius: 2px;
 
-    }
+  transform:
+    rotate(45deg);
 
+  transform-origin: left center;
 
-    .privacy-section ul {
+  pointer-events: none;
+}
 
-      margin:
-        0
-        0
-        16px
-        24px;
 
-      padding: 0;
+/* ============================================================
+   INPUT DA BUSCA
+   ============================================================ */
 
-    }
+.search-form-row input[type="search"] {
+  flex: 1;
 
+  width: 100%;
 
-    .privacy-section li {
+  min-width: 0;
 
-      margin-bottom: 10px;
+  height: 50px;
 
-      color: #000000;
+  padding:
+    0
+    18px
+    0
+    48px;
 
-      font-size: 17px;
+  border:
+    1px solid #d1d5db;
 
-      line-height: 1.7;
+  border-radius: 10px;
 
-    }
+  background: #ffffff;
 
+  color: #111827;
 
-    /* ======================================================
-       LINKS
-       ====================================================== */
+  font-family: Arial, Helvetica, sans-serif;
 
-    .privacy-section a {
+  font-size: 15px;
 
-      color: #000000;
+  outline: none;
 
-      text-decoration: underline;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
 
-    }
+.search-form-row input[type="search"]::placeholder {
+  color: #9ca3af;
 
+  opacity: 1;
+}
 
-    .privacy-section a:hover {
+.search-form-row input[type="search"]:hover {
+  border-color: #b8c0cc;
+}
 
-      opacity: 0.7;
+.search-form-row input[type="search"]:focus {
+  border-color: #2563eb;
 
-    }
+  background: #ffffff;
 
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.12);
+}
 
-    /* ======================================================
-       DESTAQUES
-       ====================================================== */
 
-    .privacy-section strong {
+/* ============================================================
+   BOTÃO BUSCAR
+   ============================================================ */
 
-      color: #000000;
+.search-form-row button {
+  flex: 0 0 auto;
 
-      font-weight: 800;
+  min-width: 105px;
 
-    }
+  height: 50px;
 
+  padding:
+    0
+    22px;
 
-    /* ======================================================
-       VOLTAR
-       ====================================================== */
+  border: 0;
 
-    .privacy-back {
+  border-radius: 10px;
 
-      margin-top: 45px;
+  background: #2563eb;
 
-      padding-top: 25px;
+  color: #ffffff;
 
-      border-top:
-        1px solid #e5e5e5;
+  font-family: Arial, Helvetica, sans-serif;
 
-    }
+  font-size: 15px;
 
+  font-weight: 700;
 
-    .privacy-back a {
+  cursor: pointer;
 
-      color: #000000;
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
+}
 
-      font-weight: 700;
+.search-form-row button:hover {
+  background: #1d4ed8;
 
-      text-decoration: none;
+  box-shadow:
+    0 4px 12px rgba(37, 99, 235, 0.20);
+}
 
-    }
+.search-form-row button:active {
+  transform: translateY(1px);
+}
 
+.search-form-row button:focus-visible {
+  outline:
+    3px solid rgba(37, 99, 235, 0.25);
 
-    .privacy-back a:hover {
+  outline-offset: 2px;
+}
 
-      text-decoration: underline;
 
-    }
+/* ============================================================
+   RESULTADOS DA BUSCA
+   ============================================================ */
 
+.search-results-section {
+  width: 100%;
+}
 
-    /* ======================================================
-       FOOTER
-       ====================================================== */
+.search-results {
+  width: 100%;
+}
 
-    .site-footer {
+.search-results-header {
+  margin: 0 0 16px;
 
-      background: #ffffff;
+  color: #4b5563;
 
-      border-top:
-        1px solid #e5e5e5;
+  font-size: 14px;
+}
 
-      padding:
-        30px
-        0;
+.search-results-header strong {
+  color: #111827;
+}
 
-    }
+.search-posts-list {
+  gap: 18px;
+}
 
+.search-post-card {
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
 
-    .footer-inner {
+.search-post-card:hover {
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.07);
 
-      text-align: center;
+  transform: translateY(-1px);
+}
 
-    }
+.search-result-summary {
+  margin: 10px 0 0;
 
+  color: #5f6368;
 
-    .footer-inner p {
+  font-size: 14px;
 
-      margin:
-        6px
-        0;
+  line-height: 1.55;
+}
 
-      color: #000000;
 
-      font-size: 14px;
+/* ============================================================
+   LISTA DE POSTS
+   ============================================================ */
 
-    }
+.posts-list {
+  width: 100%;
 
+  display: flex;
 
-    .footer-links a {
+  flex-direction: column;
 
-      color: #000000;
+  gap: 20px;
+}
 
-      text-decoration: none;
 
-    }
+/* ============================================================
+   CARD DO POST
+   ============================================================ */
 
+.post-card {
+  width: 100%;
 
-    .footer-links a:hover {
+  display: flex;
 
-      text-decoration: underline;
+  align-items: stretch;
 
-    }
+  background: #ffffff;
 
+  border: 1px solid #e5e7eb;
 
-    /* ======================================================
-       RESPONSIVO
-       ====================================================== */
+  border-radius: 12px;
 
-    @media (max-width: 900px) {
+  overflow: hidden;
 
-      .header-inner {
+  box-shadow:
+    0 3px 14px rgba(0, 0, 0, 0.04);
+}
 
-        flex-direction: column;
+.post-card-image {
+  display: block;
 
-        justify-content: center;
+  flex: 0 0 250px;
 
-        padding:
-          18px
-          0;
+  width: 250px;
+  height: 165px;
 
-      }
+  overflow: hidden;
+}
 
+.post-card-image img {
+  display: block;
 
-      .main-nav {
+  width: 100%;
+  height: 100%;
 
-        justify-content: center;
+  object-fit: cover;
 
-        gap: 14px;
+  transition:
+    transform 0.25s ease;
+}
 
-      }
+.post-card-image:hover img {
+  transform: scale(1.04);
+}
 
+.post-card-body {
+  flex: 1;
 
-      .privacy-page {
+  min-width: 0;
 
-        padding-top: 40px;
+  padding: 22px;
+}
 
-      }
+.post-card-category {
+  margin-bottom: 7px;
 
-    }
+  color: #2563eb;
 
+  font-size: 11px;
 
-    @media (max-width: 600px) {
+  font-weight: 800;
 
-      .container,
-      .privacy-container {
+  text-transform: uppercase;
 
-        width: min(
-          calc(100% - 24px),
-          900px
-        );
+  letter-spacing: 0.4px;
+}
 
-      }
+.post-card-title {
+  margin: 0;
 
+  font-size: 22px;
 
-      .logo-mark {
+  line-height: 1.3;
+}
 
-        width: 38px;
+.post-card-title a {
+  color: #111827;
 
-        height: 38px;
+  text-decoration: none;
+}
 
-        font-size: 14px;
+.post-card-title a:hover {
+  color: #2563eb;
+}
 
-      }
+.post-card-date {
+  margin-top: 10px;
 
+  color: #6b7280;
 
-      .logo-text {
+  font-size: 13px;
+}
 
-        font-size: 19px;
 
-      }
+/* ============================================================
+   POSTS VAZIOS
+   ============================================================ */
 
+.empty-posts {
+  padding: 40px;
 
-      .main-nav {
+  background: #ffffff;
 
-        gap:
-          10px
-          14px;
+  border-radius: 12px;
 
-      }
+  text-align: center;
 
+  color: #6b7280;
+}
 
-      .main-nav a {
 
-        font-size: 13px;
+/* ============================================================
+   LAYOUT PRINCIPAL DO ARTIGO
+   ============================================================
 
-      }
+   DESKTOP GRANDE:
 
+   ESQUERDA
+   220px
 
-      .privacy-title {
+   ESPAÇO
+   45px
 
-        font-size: 32px;
+   ARTIGO
+   670px
 
-      }
+   ESPAÇO
+   45px
 
+   DIREITA
+   220px
 
-      .privacy-section h2 {
+   TOTAL:
 
-        font-size: 21px;
+   220 + 45 + 670 + 45 + 220
+   = 1200px
 
-      }
+   ============================================================ */
 
+.article-layout {
+  width: 100%;
+  max-width: 1200px;
 
-      .privacy-section p,
-      .privacy-section li {
+  margin: 0 auto;
 
-        font-size: 16px;
+  padding: 30px 0 60px;
 
-      }
+  display: grid;
 
-    }
+  grid-template-columns:
+    220px
+    minmax(0, 670px)
+    220px;
 
-  </style>
+  column-gap: 45px;
 
-</head>
+  align-items: start;
 
+  overflow: visible;
+}
 
-<body>
 
+/* ============================================================
+   SIDEBARS
+   ============================================================
 
-  <!-- ========================================================
-       HEADER
-       ======================================================== -->
+   IMPORTANTE:
 
-  <header class="site-header">
+   O próprio ASIDE é sticky.
 
-    <div class="container header-inner">
+   Não usamos overflow hidden aqui.
 
+   ============================================================ */
 
-      <!-- LOGO -->
+.article-sidebar {
+  width: 220px;
 
-      <a
-        href="/"
-        class="logo"
-        aria-label="W7Notícias - Página inicial"
-      >
+  min-width: 220px;
+  max-width: 220px;
 
-        <span class="logo-mark">
-          W7
-        </span>
+  min-height: 1px;
 
-        <span class="logo-text">
-          w7noticias
-        </span>
+  align-self: start;
 
-      </a>
+  position: -webkit-sticky;
+  position: sticky;
 
+  top: 20px;
 
-      <!-- MENU -->
+  height: fit-content;
 
-      <nav
-        class="main-nav"
-        aria-label="Navegação principal"
-      >
+  z-index: 1;
 
-        <a href="/">
-          Início
-        </a>
+  overflow: visible;
+}
 
-        <a href="/categoria/famosos.html">
-          Famosos
-        </a>
 
-        <a href="/categoria/curiosidades.html">
-          Curiosidades
-        </a>
+/* ============================================================
+   SIDEBAR ESQUERDA
+   ============================================================ */
 
-        <a href="/categoria/saude.html">
-          Saúde
-        </a>
+.article-sidebar-left {
+  grid-column: 1;
 
-        <a href="/categoria/brasil.html">
-          Brasil
-        </a>
+  min-width: 0;
+}
 
-        <a href="/categoria/mundo.html">
-          Mundo
-        </a>
 
-        <a href="/contato.html">
-          Contato
-        </a>
+/* ============================================================
+   SIDEBAR DIREITA
+   ============================================================ */
 
-        <a
-          href="/busca.html"
-          class="search-link"
-        >
-          Buscar
-        </a>
+.article-sidebar-right {
+  grid-column: 3;
 
-      </nav>
+  min-width: 0;
+}
 
-    </div>
 
-  </header>
+/* ============================================================
+   CONTAINER INTERNO DO SIDEBAR
+   ============================================================
 
+   Este elemento NÃO é sticky.
 
-  <!-- ========================================================
-       CONTEÚDO
-       ======================================================== -->
+   Ele apenas organiza os anúncios.
 
-  <main class="privacy-page">
+   ============================================================ */
 
-    <div class="privacy-container">
+.sidebar-sticky {
+  width: 220px;
+  max-width: 220px;
 
+  min-width: 0;
 
-      <h1 class="privacy-title">
-        Política de Privacidade
-      </h1>
+  align-self: start;
 
+  overflow: visible;
+}
 
-      <!-- ====================================================
-           QUEM SOMOS
-           ==================================================== -->
 
-      <section class="privacy-section">
+/* ============================================================
+   ANÚNCIOS LATERAIS
+   ============================================================ */
 
-        <h2>
-          Quem somos
-        </h2>
+.article-sidebar .ad-slot {
+  display: block;
 
-        <p>
-          O W7Notícias é um site de notícias e informação,
-          criado para oferecer conteúdo de interesse dos
-          leitores sobre diferentes assuntos.
-        </p>
+  width: 220px;
+  max-width: 220px;
 
-        <p>
-          Nosso endereço na internet é:
-          <a
-            href="https://w7noticias.com"
-            rel="noopener"
-          >
-            https://w7noticias.com
-          </a>.
-        </p>
+  min-width: 0;
 
-      </section>
+  margin: 0 0 25px;
 
+  padding: 0;
 
-      <!-- ====================================================
-           DADOS PESSOAIS
-           ==================================================== -->
+  text-align: center;
 
-      <section class="privacy-section">
+  overflow: visible;
+}
 
-        <h2>
-          Quais dados pessoais coletamos e por quê
-        </h2>
 
-        <p>
-          O W7Notícias não exige cadastro para que o visitante
-          possa acessar suas páginas e ler seus conteúdos.
-        </p>
+/* ============================================================
+   ELEMENTOS INTERNOS DOS ANÚNCIOS
+   ============================================================ */
 
-        <p>
-          Quando o visitante entra em contato conosco por meio
-          do formulário disponível no site, podemos receber
-          informações como nome, endereço de e-mail, assunto e
-          o conteúdo da mensagem enviada.
-        </p>
+.article-sidebar .ad-slot iframe,
+.article-sidebar .ad-slot ins,
+.article-sidebar .ad-slot img {
+  display: block;
 
-        <p>
-          Essas informações são utilizadas exclusivamente para
-          responder ao contato, esclarecer dúvidas, receber
-          sugestões ou tratar da solicitação apresentada pelo
-          visitante.
-        </p>
+  max-width: 100%;
 
-      </section>
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.article-sidebar .ad-slot img {
+  height: auto;
+}
 
-      <!-- ====================================================
-           FORMULÁRIO DE CONTATO
-           ==================================================== -->
 
-      <section class="privacy-section">
+/* ============================================================
+   PROTEÇÃO DO CONTEÚDO DO ANÚNCIO
+   ============================================================ */
 
-        <h2>
-          Formulário de contato
-        </h2>
+.article-sidebar .ad-slot > * {
+  max-width: 100% !important;
+}
 
-        <p>
-          As informações enviadas voluntariamente pelo formulário
-          de contato não são comercializadas nem utilizadas para
-          fins de publicidade direta.
-        </p>
+.article-sidebar .ad-slot iframe {
+  max-width: 100% !important;
+}
 
-        <p>
-          Os dados podem ser armazenados pelo período necessário
-          para atender à solicitação recebida e manter o histórico
-          de comunicação, quando isso for necessário.
-        </p>
+.article-sidebar .ad-slot img {
+  max-width: 100% !important;
+}
 
-      </section>
 
+/* ============================================================
+   ARTIGO CENTRAL
+   ============================================================ */
 
-      <!-- ====================================================
-           COOKIES
-           ==================================================== -->
+.article-layout > .article {
+  grid-column: 2;
 
-      <section class="privacy-section">
+  width: 100%;
+  max-width: 670px;
 
-        <h2>
-          Cookies
-        </h2>
+  min-width: 0;
 
-        <p>
-          O W7Notícias pode utilizar cookies e tecnologias
-          semelhantes para melhorar o funcionamento do site,
-          compreender como os visitantes utilizam as páginas,
-          medir o desempenho do conteúdo e oferecer publicidade.
-        </p>
+  margin: 0;
 
-        <p>
-          Cookies são pequenos arquivos armazenados no navegador
-          do visitante. Eles podem ser utilizados para reconhecer
-          determinadas informações do navegador, lembrar
-          preferências e gerar informações estatísticas sobre
-          a utilização do site.
-        </p>
+  background: #ffffff;
 
-      </section>
+  border-radius: 14px;
 
+  padding: 32px;
 
-      <!-- ====================================================
-           GOOGLE ADSENSE
-           ==================================================== -->
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.05);
 
-      <section class="privacy-section">
+  position: relative;
 
-        <h2>
-          Publicidade e Google AdSense
-        </h2>
+  z-index: 2;
 
-        <p>
-          O W7Notícias poderá utilizar o Google AdSense para
-          exibir anúncios em suas páginas.
-        </p>
+  overflow: hidden;
+}
 
-        <p>
-          O Google e seus parceiros de publicidade podem utilizar
-          cookies, identificadores, endereços IP, beacons da Web
-          e tecnologias semelhantes para veicular anúncios, medir
-          o desempenho da publicidade e, quando aplicável,
-          apresentar anúncios relacionados aos interesses dos
-          usuários.
-        </p>
+.article {
+  width: 100%;
 
-        <p>
-          Esses recursos podem permitir que anúncios sejam
-          apresentados com base em visitas anteriores do usuário
-          ao W7Notícias ou a outros sites.
-        </p>
+  max-width: 670px;
 
-        <p>
-          O uso de cookies e tecnologias de publicidade de
-          terceiros é realizado de acordo com as políticas e
-          configurações aplicáveis do Google e dos respectivos
-          parceiros.
-        </p>
+  min-width: 0;
 
-        <p>
-          O visitante pode consultar ou alterar suas preferências
-          relacionadas à publicidade personalizada nas
-          <a
-            href="https://adssettings.google.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Configurações de anúncios do Google
-          </a>.
-        </p>
+  margin: 0;
 
-        <p>
-          Para entender melhor como o Google utiliza informações
-          de sites e aplicativos que utilizam seus serviços,
-          consulte:
-          <a
-            href="https://policies.google.com/technologies/partner-sites"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Como o Google usa informações de sites ou apps que
-            utilizam nossos serviços
-          </a>.
-        </p>
+  background: #ffffff;
 
-      </section>
+  border-radius: 14px;
 
+  padding: 32px;
 
-      <!-- ====================================================
-           GOOGLE ANALYTICS
-           ==================================================== -->
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.05);
 
-      <section class="privacy-section">
+  overflow: hidden;
+}
 
-        <h2>
-          Google Analytics
-        </h2>
 
-        <p>
-          O W7Notícias poderá utilizar o Google Analytics para
-          entender como os visitantes utilizam o site e obter
-          informações estatísticas, como páginas acessadas,
-          quantidade de visitas e comportamento geral de
-          navegação.
-        </p>
+/* ============================================================
+   CATEGORIA
+   ============================================================ */
 
-        <p>
-          Essas informações são utilizadas para acompanhar o
-          desempenho do site e melhorar a qualidade do conteúdo
-          oferecido aos leitores.
-        </p>
+.article-category {
+  display: inline-block;
 
-      </section>
+  margin: 0 0 14px;
 
+  padding: 5px 11px;
 
-      <!-- ====================================================
-           MÍDIA INCORPORADA
-           ==================================================== -->
+  border-radius: 20px;
 
-      <section class="privacy-section">
+  background: #eef2ff;
 
-        <h2>
-          Mídia incorporada de outros sites
-        </h2>
+  color: #2563eb;
 
-        <p>
-          Alguns conteúdos publicados no W7Notícias podem
-          apresentar vídeos, imagens ou outros materiais
-          incorporados de serviços de terceiros.
-        </p>
+  font-size: 12px;
 
-        <p>
-          Ao acessar esse tipo de conteúdo, o visitante poderá
-          interagir diretamente com o serviço de origem. Esses
-          serviços podem utilizar cookies, tecnologias de
-          rastreamento ou coletar informações de acordo com suas
-          próprias políticas de privacidade.
-        </p>
+  font-weight: 800;
 
-      </section>
+  text-transform: uppercase;
+}
 
 
-      <!-- ====================================================
-           COMPARTILHAMENTO
-           ==================================================== -->
+/* ============================================================
+   TÍTULO
+   ============================================================ */
 
-      <section class="privacy-section">
+.article-title {
+  margin: 0;
 
-        <h2>
-          Com quem compartilhamos seus dados
-        </h2>
+  color: #111827;
 
-        <p>
-          O W7Notícias não comercializa ou vende informações
-          pessoais de seus visitantes.
-        </p>
+  font-size: 36px;
 
-        <p>
-          Dados poderão ser processados por serviços utilizados
-          na operação do site, como serviços de hospedagem,
-          análise de audiência, publicidade e ferramentas
-          necessárias ao funcionamento das páginas.
-        </p>
+  line-height: 1.16;
 
-      </section>
+  letter-spacing: -0.4px;
 
+  overflow-wrap: break-word;
+}
 
-      <!-- ====================================================
-           SEGURANÇA
-           ==================================================== -->
 
-      <section class="privacy-section">
+/* ============================================================
+   DATA
+   ============================================================ */
 
-        <h2>
-          Segurança das informações
-        </h2>
+.article-meta {
+  margin: 12px 0 25px;
 
-        <p>
-          Adotamos medidas razoáveis para proteger as informações
-          recebidas por meio do site contra acesso, alteração,
-          divulgação ou destruição não autorizada.
-        </p>
+  color: #6b7280;
 
-        <p>
-          Entretanto, nenhum sistema disponível na internet pode
-          garantir segurança absoluta.
-        </p>
+  font-size: 13px;
+}
 
-      </section>
 
+/* ============================================================
+   IMAGEM DE DESTAQUE
+   ============================================================ */
 
-      <!-- ====================================================
-           DIREITOS
-           ==================================================== -->
+.article-image {
+  width: 100%;
 
-      <section class="privacy-section">
+  margin: 0 0 30px;
+}
 
-        <h2>
-          Seus direitos
-        </h2>
+.article-image img {
+  display: block;
 
-        <p>
-          O visitante pode solicitar informações sobre os dados
-          pessoais que tenham sido fornecidos diretamente ao
-          W7Notícias, bem como solicitar sua correção ou exclusão,
-          quando aplicável.
-        </p>
+  width: 100%;
 
-        <p>
-          Para fazer uma solicitação relacionada aos seus dados,
-          basta entrar em contato conosco utilizando as
-          informações apresentadas ao final desta página.
-        </p>
+  height: auto;
 
-      </section>
+  max-height: 460px;
 
+  object-fit: cover;
 
-      <!-- ====================================================
-           ALTERAÇÕES
-           ==================================================== -->
+  border-radius: 12px;
+}
 
-      <section class="privacy-section">
 
-        <h2>
-          Alterações nesta Política de Privacidade
-        </h2>
+/* ============================================================
+   CONTEÚDO
+   ============================================================ */
 
-        <p>
-          Esta Política de Privacidade poderá ser atualizada
-          sempre que houver mudanças nos serviços, nas
-          funcionalidades do site ou na legislação aplicável.
-        </p>
+.article-content {
+  width: 100%;
 
-        <p>
-          Recomendamos que o visitante consulte esta página
-          periodicamente para acompanhar eventuais alterações.
-        </p>
+  min-width: 0;
 
-      </section>
+  color: #30343b;
 
+  font-size: 18px;
 
-      <!-- ====================================================
-           CONTATO
-           ==================================================== -->
+  line-height: 1.75;
 
-      <section class="privacy-section">
+  overflow-wrap: break-word;
 
-        <h2>
-          Suas informações de contato
-        </h2>
+  word-wrap: break-word;
 
-        <p>
-          Caso tenha alguma dúvida sobre esta Política de
-          Privacidade ou sobre o tratamento de informações
-          realizado pelo W7Notícias, entre em contato conosco
-          pelo e-mail:
-        </p>
+  word-break: normal;
+}
 
-        <p>
+.article-content p {
+  margin: 0 0 22px;
+}
 
-          <a
-            href="mailto:bichanodf@gmail.com"
-          >
-            bichanodf@gmail.com
-          </a>
+.article-content h2 {
+  margin: 35px 0 14px;
 
-        </p>
+  color: #111827;
 
-      </section>
+  font-size: 27px;
 
+  line-height: 1.3;
+}
 
-      <!-- ====================================================
-           VOLTAR
-           ==================================================== -->
+.article-content h3 {
+  margin: 28px 0 12px;
 
-      <div class="privacy-back">
+  color: #111827;
 
-        <a href="https://www.w7noticias.com/">
-          ← Voltar para o W7Notícias
-        </a>
+  font-size: 22px;
 
-      </div>
+  line-height: 1.3;
+}
 
+.article-content img {
+  display: block;
 
-    </div>
+  width: auto;
 
-  </main>
+  max-width: 100%;
 
+  height: auto;
 
-  <!-- ========================================================
-       FOOTER
-       ======================================================== -->
+  margin: 25px auto;
 
-  <footer class="site-footer">
+  border-radius: 10px;
+}
 
-    <div class="container footer-inner">
+.article-content a {
+  color: #2563eb;
+}
 
-      <p>
+.article-content blockquote {
+  margin: 25px 0;
 
-        &copy;
+  padding: 16px 20px;
 
-        <span id="anoAtual"></span>
+  border-left:
+    4px solid #2563eb;
 
-        W7Notícias.
-        Todos os direitos reservados.
+  background: #f3f4f6;
 
-      </p>
+  color: #4b5563;
+}
 
+.article-content ul,
+.article-content ol {
+  margin: 0 0 25px;
 
-      <p class="footer-links">
+  padding-left: 28px;
+}
 
-        <a
-          href="/politica-de-privacidade.html"
-        >
-          Política de Privacidade
-        </a>
+.article-content table {
+  width: 100%;
 
-        &nbsp;·&nbsp;
+  max-width: 100%;
 
-        <a
-          href="/contato.html"
-        >
-          Contato
-        </a>
+  border-collapse: collapse;
 
-      </p>
+  display: block;
 
-    </div>
+  overflow-x: auto;
+}
 
-  </footer>
+.article-content pre {
+  max-width: 100%;
 
+  overflow-x: auto;
 
-  <!-- ========================================================
-       ANO AUTOMÁTICO
-       ======================================================== -->
+  padding: 15px;
 
-  <script>
+  background: #f3f4f6;
 
-    "use strict";
+  border-radius: 8px;
+}
 
-    document.getElementById(
-      "anoAtual"
-    ).textContent =
-      new Date().getFullYear();
+.article-content code {
+  overflow-wrap: break-word;
+}
 
-  </script>
 
+/* ============================================================
+   VÍDEO
+   ============================================================ */
 
-</body>
+.article-video {
+  width: 100%;
 
-</html>
+  margin: 35px 0 10px;
+}
+
+.article-video::before {
+  content: "Vídeo";
+
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #111827;
+
+  font-size: 15px;
+
+  font-weight: 700;
+}
+
+.youtube-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+
+  border-radius: 12px;
+
+  background: #000000;
+}
+
+.youtube-wrapper iframe {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border: 0;
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.site-footer {
+  width: 100%;
+
+  margin-top: 20px;
+
+  padding: 30px 20px;
+
+  background: #111827;
+
+  color: #d1d5db;
+
+  text-align: center;
+
+  font-size: 13px;
+}
+
+.site-footer p {
+  margin: 5px 0;
+}
+
+.footer-links {
+  margin-top: 8px;
+}
+
+.footer-links a {
+  color: #d1d5db;
+
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+
+/* ============================================================
+   DESKTOP GRANDE
+   ============================================================ */
+
+@media (min-width: 1201px) {
+
+  .article-layout {
+    width: 1200px;
+    max-width: 1200px;
+
+    grid-template-columns:
+      220px
+      minmax(0, 670px)
+      220px;
+
+    column-gap: 45px;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .article-sidebar {
+    width: 220px;
+
+    min-width: 220px;
+    max-width: 220px;
+  }
+
+  .sidebar-sticky {
+    width: 220px;
+
+    max-width: 220px;
+  }
+
+  .article-layout > .article {
+    max-width: 670px;
+  }
+
+}
+
+
+/* ============================================================
+   NOTEBOOK
+   ============================================================ */
+
+@media (max-width: 1200px) and (min-width: 1051px) {
+
+  .article-layout {
+    width: 100%;
+    max-width: 1200px;
+
+    grid-template-columns:
+      190px
+      minmax(0, 1fr)
+      190px;
+
+    column-gap: 30px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .article-sidebar {
+    width: 190px;
+
+    min-width: 190px;
+    max-width: 190px;
+  }
+
+  .sidebar-sticky {
+    width: 190px;
+
+    max-width: 190px;
+  }
+
+  .article-sidebar .ad-slot {
+    width: 190px;
+
+    max-width: 190px;
+  }
+
+  .article {
+    max-width: 100%;
+
+    padding: 28px;
+  }
+
+}
+
+
+/* ============================================================
+   NOTEBOOK MENOR
+   ============================================================ */
+
+@media (max-width: 1050px) and (min-width: 901px) {
+
+  .article-layout {
+    width: 100%;
+    max-width: 100%;
+
+    grid-template-columns:
+      150px
+      minmax(0, 1fr)
+      150px;
+
+    column-gap: 20px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .article-sidebar {
+    width: 150px;
+
+    min-width: 150px;
+    max-width: 150px;
+  }
+
+  .sidebar-sticky {
+    width: 150px;
+
+    max-width: 150px;
+  }
+
+  .article-sidebar .ad-slot {
+    width: 150px;
+
+    max-width: 150px;
+  }
+
+  .article {
+    padding: 25px;
+  }
+
+  .article-title {
+    font-size: 32px;
+  }
+
+}
+
+
+/* ============================================================
+   TABLET
+   ============================================================ */
+
+@media (max-width: 900px) {
+
+  .article-layout {
+    display: block;
+
+    width: 100%;
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    padding: 20px 15px 40px;
+  }
+
+  .article-sidebar {
+    display: none;
+  }
+
+  .article {
+    width: 100%;
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    padding: 28px;
+  }
+
+}
+
+
+/* ============================================================
+   HEADER TABLET
+   ============================================================ */
+
+@media (max-width: 800px) {
+
+  .header-inner {
+    min-height: auto;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .main-nav {
+    width: 100%;
+
+    justify-content: flex-start;
+
+    gap: 12px;
+  }
+
+  .post-card {
+    display: block;
+  }
+
+  .post-card-image {
+    width: 100%;
+
+    height: auto;
+
+    aspect-ratio: 16 / 9;
+  }
+
+  .post-card-body {
+    padding: 20px;
+  }
+
+
+  /* ==========================================================
+     BUSCA TABLET
+     ========================================================== */
+
+  .search-page {
+    padding-top: 25px;
+  }
+
+  .search-heading h1 {
+    font-size: 32px;
+  }
+
+  .search-box {
+    padding: 20px;
+  }
+
+}
+
+
+/* ============================================================
+   CELULAR
+   ============================================================ */
+
+@media (max-width: 600px) {
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .home-container {
+    padding: 20px 15px 40px;
+  }
+
+  .home-heading h1 {
+    font-size: 29px;
+  }
+
+  .main-nav {
+    gap: 10px;
+  }
+
+  .main-nav a {
+    font-size: 13px;
+  }
+
+  .post-card-title {
+    font-size: 20px;
+  }
+
+  .article-layout {
+    padding: 15px 10px 30px;
+  }
+
+  .article {
+    padding: 22px 17px;
+
+    border-radius: 10px;
+  }
+
+  .article-title {
+    font-size: 28px;
+
+    line-height: 1.18;
+  }
+
+  .article-content {
+    font-size: 16px;
+
+    line-height: 1.7;
+  }
+
+  .article-content h2 {
+    font-size: 24px;
+  }
+
+  .article-content h3 {
+    font-size: 20px;
+  }
+
+  .article-image img {
+    max-height: none;
+
+    border-radius: 9px;
+  }
+
+  .article-video {
+    margin-top: 30px;
+  }
+
+  .site-footer {
+    padding: 25px 15px;
+  }
+
+
+  /* ==========================================================
+     BUSCA CELULAR
+     ========================================================== */
+
+  .search-page {
+    padding-top: 20px;
+
+    padding-bottom: 40px;
+  }
+
+  .search-heading {
+    margin-bottom: 20px;
+  }
+
+  .search-heading h1 {
+    font-size: 29px;
+  }
+
+  .search-heading p {
+    font-size: 14px;
+  }
+
+  .search-box {
+    padding: 17px;
+
+    border-radius: 12px;
+  }
+
+  .search-form-row {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .search-form-row input[type="search"] {
+    height: 48px;
+
+    padding-left: 46px;
+
+    font-size: 15px;
+  }
+
+  .search-form-row button {
+    width: 100%;
+
+    height: 48px;
+  }
+
+  .search-form-row::before {
+    left: 16px;
+  }
+
+  .search-form-row::after {
+    left: 30px;
+  }
+
+  .search-result-summary {
+    font-size: 14px;
+  }
+
+}
+
+
+/* ============================================================
+   TELAS MUITO PEQUENAS
+   ============================================================ */
+
+@media (max-width: 380px) {
+
+  .article {
+    padding: 18px 14px;
+  }
+
+  .article-title {
+    font-size: 25px;
+  }
+
+  .article-content {
+    font-size: 15.5px;
+  }
+
+
+  /* ==========================================================
+     BUSCA MUITO PEQUENA
+     ========================================================== */
+
+  .search-box {
+    padding: 14px;
+  }
+
+  .search-heading h1 {
+    font-size: 26px;
+  }
+
+  .search-form-row input[type="search"] {
+    font-size: 14px;
+  }
+
+}
+
+
+/* ============================================================
+   ACESSIBILIDADE
+   ============================================================ */
+
+a:focus-visible {
+  outline:
+    3px solid #2563eb;
+
+  outline-offset:
+    3px;
+}
+
+
+/* ============================================================
+   FIM
+   ============================================================ */</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Política de Privacidade","description":"Política de Privacidade e uso de cookies do w7noticias.","url":"https://w7noticias.com/politica-de-privacidade.html","isPartOf":{"@type":"WebSite","name":"w7noticias","url":"https://w7noticias.com"}}</script></head><body><header class="site-header"><div class="container header-inner"><a href="https://w7noticias.com" class="logo" aria-label="w7noticias - Página inicial"><img src="https://raw.githubusercontent.com/alexusbsb-ctrl/w7noticias/refs/heads/main/logo.ico" class="logo-image" alt="w7noticias" decoding="async"></a><nav class="main-nav" aria-label="Navegação principal"><a href="https://w7noticias.com">Início</a><a href="/categoria/famosos.html" target="_self">Famosos2</a><a href="/categoria/curiosidades.html" target="_self">Curiosidades2</a><a href="/categoria/saude.html" target="_self">Saúde2</a><a href="/categoria/brasil.html" target="_self">Brasil2</a><a href="/categoria/mundo.html" target="_self">Mundo2</a><a href="/contato.html" target="_self">Contato2</a><a href="/busca.html" target="_self">Busca2</a></nav></div></header><main class="container"><article class="article institutional-page"><header class="article-header"><h1>Política de Privacidade</h1></header><div class="article-content"><section class="institutional-intro"><p>A sua privacidade é importante para o w7noticias. Esta Política de Privacidade explica quais informações coletamos, como as utilizamos e quais são as suas opções em relação a elas.</p></section><h2>Informações coletadas automaticamente</h2><p>Como a maioria dos sites, coletamos automaticamente algumas informações não pessoais, como tipo de navegador, idioma, páginas visitadas, tempo de permanência e dados de dispositivo, com o objetivo de melhorar a experiência de navegação e o conteúdo exibido.</p><h2>Cookies</h2><p>Utilizamos cookies próprios e de terceiros para lembrar preferências, gerar estatísticas de uso e personalizar a exibição de conteúdo e anúncios. Você pode desativar os cookies a qualquer momento nas configurações do seu navegador, embora isso possa afetar algumas funcionalidades do site.</p><h2>Publicidade e Google AdSense</h2><p>Este site utiliza o Google AdSense para exibição de anúncios. O Google, como fornecedor terceirizado, utiliza cookies (como o cookie DoubleClick DART) para exibir anúncios com base nas visitas anteriores do usuário a este e a outros sites na internet.</p><p>O uso de cookies de publicidade permite que o Google e seus parceiros exibam anúncios relevantes aos usuários com base em visitas anteriores ao nosso site e/ou a outros sites. Os usuários podem desativar a publicidade personalizada acessando as <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer">Configurações de anúncios do Google</a>.</p><p>Para mais informações sobre como o Google utiliza dados de sites parceiros, recomendamos a leitura da página <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">"Como o Google usa dados de sites ou apps que usam nossos serviços"</a>.</p><h2>Compartilhamento de dados com terceiros</h2><p>Não vendemos nem alugamos dados pessoais dos visitantes. Informações podem ser compartilhadas com prestadores de serviços de publicidade e análise (como o Google), estritamente para as finalidades descritas nesta política.</p><h2>Links para sites externos</h2><p>Nosso site pode conter links para sites de terceiros. Não nos responsabilizamos pelas práticas de privacidade ou pelo conteúdo desses sites externos.</p><h2>Seus direitos (LGPD)</h2><p>Em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018), você pode solicitar informações sobre os dados tratados, correção, anonimização ou eliminação de dados pessoais, quando aplicável, entrando em contato pelos canais indicados abaixo.</p><h2>Alterações nesta política</h2><p>Esta Política de Privacidade pode ser atualizada periodicamente. Recomendamos que você revise esta página regularmente para se manter informado sobre eventuais mudanças.</p><h2>Contato</h2><p>Em caso de dúvidas sobre esta Política de Privacidade, entre em contato pelo e-mail: <a href="mailto:bichanodf@gmail.com">bichanodf@gmail.com</a>.</p></div></article></main><footer class="site-footer"><div class="container footer-inner"><p>&copy; 2026 w7noticias. Todos os direitos reservados.</p><p class="footer-links"><a href="https://w7noticias.com/politica-de-privacidade.html">Política de Privacidade</a> · <a href="https://w7noticias.com/contato.html">Contato</a></p></div></footer></body></html>
