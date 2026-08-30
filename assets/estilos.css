@@ -167,8 +167,8 @@ a {
 .logo-text {
   color: #2563eb;
 
-  font-size: 22px;
-  font-weight: 800;
+  font-size: 14px;   /* mesmo tamanho das letras do menu */
+  font-weight: 600;  /* mesmo peso das letras do menu */
 }
 
 
@@ -1585,7 +1585,7 @@ a {
   }
 
   .logo-text {
-    font-size: 19px;
+    font-size: 13px;  /* mesmo tamanho das letras do menu no celular */
   }
 
   .main-nav {
