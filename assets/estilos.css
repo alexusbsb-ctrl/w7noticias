@@ -1880,3 +1880,198 @@ main.container,
     padding-right: 16px;
   }
 }
+
+
+/* ============================================================
+   SELETOR DE IDIOMAS
+   ============================================================
+   Portuguese (Brasil) • English (EUA) • Espanish (Espanha)
+
+   Fica no topo do site, abaixo do menu principal, alinhado
+   à direita no desktop e centralizado no celular.
+   ============================================================ */
+
+.header-lang {
+  width: 100%;
+
+  padding-top: 10px;
+  padding-bottom: 12px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+.lang-switch {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 6px;
+
+  width: fit-content;
+  margin-left: auto;
+
+  padding: 4px;
+
+  background: #f5f7fa;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+}
+
+.lang-option {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 6px 12px;
+
+  border: 0;
+  border-radius: 999px;
+
+  background: transparent;
+
+  color: #697386;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background .18s ease,
+    color .18s ease,
+    box-shadow .18s ease;
+}
+
+.lang-option:hover {
+  background: #e8eefc;
+  color: #1d4ed8;
+}
+
+.lang-option:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.lang-option.is-active {
+  background: #ffffff;
+
+  color: #1d4ed8;
+
+  box-shadow: 0 1px 3px rgba(15, 23, 42, .16);
+}
+
+.lang-flag {
+  width: 22px;
+  height: 15px;
+
+  display: block;
+
+  border-radius: 3px;
+
+  object-fit: cover;
+
+  box-shadow: 0 0 0 1px rgba(15, 23, 42, .12);
+}
+
+.lang-name {
+  white-space: nowrap;
+}
+
+
+/* ============================================================
+   GOOGLE TRADUTOR — ELEMENTOS OCULTOS
+   ============================================================ */
+
+.lang-google-hidden {
+  position: absolute !important;
+
+  width: 1px;
+  height: 1px;
+
+  overflow: hidden;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+
+  white-space: nowrap;
+}
+
+/* Remove a barra superior injetada pelo widget */
+body {
+  top: 0 !important;
+}
+
+.skiptranslate,
+.goog-te-banner-frame,
+#goog-gt-tt,
+.goog-te-balloon-frame {
+  display: none !important;
+}
+
+.goog-text-highlight {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+
+/* ============================================================
+   SELETOR DE IDIOMAS — TABLET
+   ============================================================ */
+
+@media (max-width: 1050px) {
+
+  .lang-option {
+    padding: 6px 10px;
+
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .lang-name {
+    display: none;
+  }
+
+  .lang-option {
+    padding: 7px 9px;
+  }
+
+}
+
+
+/* ============================================================
+   SELETOR DE IDIOMAS — CELULAR
+   ============================================================ */
+
+@media (max-width: 800px) {
+
+  .lang-switch {
+    margin-left: auto;
+    margin-right: auto;
+
+    justify-content: center;
+  }
+
+  .header-lang {
+    padding-top: 8px;
+    padding-bottom: 10px;
+  }
+
+}
+
+@media (max-width: 420px) {
+
+  .lang-name {
+    display: none;
+  }
+
+}
