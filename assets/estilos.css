@@ -136,8 +136,8 @@ a {
 
 .logo-mark,
 .logo img {
-  width: 84px;      /* 2× mais largo  (42 × 2) */
-  height: 63px;      /* 1,5× mais alto (42 × 1,5) */
+  width: 32px;      /* 2× mais largo  (42 × 2) */
+  height: 32px;      /* 1,5× mais alto (42 × 1,5) */
 
   display: inline-flex;
 
@@ -167,7 +167,7 @@ a {
 .logo-text {
   color: #2563eb;
 
-  font-size: 14px;   /* mesmo tamanho das letras do menu */
+  font-size: 16px;   /* mesmo tamanho das letras do menu */
   font-weight: 600;  /* mesmo peso das letras do menu */
 }
 
@@ -1081,6 +1081,49 @@ a {
    IMAGEM DE DESTAQUE
    ============================================================ */
 
+.article-image-credit {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #6b7280;
+  font-style: italic;
+  text-align: left;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin: 32px 0;
+}
+
+.pagination-link {
+  display: inline-block;
+  min-width: 40px;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  color: #111827;
+  font-size: 14px;
+  font-weight: 600;
+  background: #fff;
+}
+
+.pagination-link:hover {
+  background: #f3f4f6;
+}
+
+.pagination-current {
+  background: #b91c1c;
+  border-color: #b91c1c;
+  color: #fff;
+  cursor: default;
+}
+
 .article-image {
   width: 100%;
 
@@ -1574,8 +1617,8 @@ a {
   /* Logo reduzido proporcionalmente para caber na tela do celular */
   .logo-mark,
   .logo img {
-    width: 68px;
-    height: 51px;
+    width: 32px;
+    height: 32px;
 
     border-radius: 13px;
   }
@@ -1744,8 +1787,8 @@ a {
 
   .logo-mark,
   .logo img {
-    width: 58px;
-    height: 44px;
+    width: 32px;
+    height: 32px;
 
     border-radius: 11px;
   }
