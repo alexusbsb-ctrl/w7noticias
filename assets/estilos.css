@@ -136,8 +136,8 @@ a {
 
 .logo-mark,
 .logo img {
-  width: 32px;      /* 2× mais largo  (42 × 2) */
-  height: 32px;      /* 1,5× mais alto (42 × 1,5) */
+  width: 32px;      /* era 42x42 no inicio */
+  height: 32px;      /* era 42x42 no inicio */
 
   display: inline-flex;
 
@@ -150,7 +150,7 @@ a {
 }
 
 .logo-mark {
-  background: #062B78;
+  background: #003399;
   color: #ffffff;
 
   font-size: 24px;
@@ -165,7 +165,7 @@ a {
 }
 
 .logo-text {
-  color: #2563eb;
+  color: #003399;
 
   font-size: 16px;   /* mesmo tamanho das letras do menu */
   font-weight: 600;  /* mesmo peso das letras do menu */
