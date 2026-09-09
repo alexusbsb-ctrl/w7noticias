@@ -165,10 +165,10 @@ a {
 }
 
 .logo-text {
-  color: #003399;
+  color: #003399;  /* Aqui que muda o texto ao lado do logo */
 
-  font-size: 16px;   /* mesmo tamanho das letras do menu */
-  font-weight: 600;  /* mesmo peso das letras do menu */
+  font-size: 16px;   
+  font-weight: 600; 
 }
 
 
@@ -1624,7 +1624,7 @@ a {
   }
 
   .logo-mark {
-    font-size: 19px;
+    font-size: 24px;
   }
 
   .logo-text {
@@ -1794,7 +1794,7 @@ a {
   }
 
   .logo-mark {
-    font-size: 16px;
+    font-size: 24px;
   }
 
 
